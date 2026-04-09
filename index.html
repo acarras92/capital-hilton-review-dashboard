@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capital Hilton — Review Intelligence Dashboard</title>
+<style>
+  :root {
+    --bg: #0f1117; --surface: #1a1d27; --surface2: #242736; --border: #2e3142;
+    --text: #e4e6f0; --text-muted: #8b8fa3; --accent: #6366f1;
+    --green: #22c55e; --yellow: #eab308; --orange: #f97316; --red: #ef4444;
+    --blue: #3b82f6; --purple: #a855f7; --cyan: #06b6d4;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+  .container { max-width: 1400px; margin: 0 auto; padding: 24px; }
+  header { margin-bottom: 32px; }
+  header h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+  header p { color: var(--text-muted); font-size: 14px; }
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 32px; }
+  .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .kpi-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 4px; }
+  .kpi-value { font-size: 28px; font-weight: 700; }
+  .kpi-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+  .section-title { font-size: 18px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; }
+  .badge-risk { background: rgba(239,68,68,0.15); color: var(--red); }
+  .badge-watch { background: rgba(234,179,8,0.15); color: var(--yellow); }
+  .badge-adequate { background: rgba(34,197,94,0.15); color: var(--green); }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+  @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .card h3 { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .bar-label { font-size: 12px; color: var(--text-muted); width: 90px; text-align: right; flex-shrink: 0; }
+  .bar-track { flex: 1; height: 10px; background: var(--surface2); border-radius: 5px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 5px; transition: width 0.6s ease; }
+  .bar-value { font-size: 12px; font-weight: 700; width: 32px; flex-shrink: 0; }
+
+  .dist-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .dist-label { font-size: 12px; color: var(--text-muted); width: 24px; text-align: right; flex-shrink: 0; }
+  .dist-bar { height: 8px; border-radius: 4px; transition: width 0.6s ease; }
+  .dist-count { font-size: 11px; color: var(--text-muted); width: 40px; flex-shrink: 0; }
+
+  .complaint-chart { display: flex; gap: 4px; align-items: end; height: 100px; padding-top: 8px; }
+  .complaint-col { display: flex; flex-direction: column; align-items: center; flex: 1; gap: 4px; }
+  .complaint-bar-v { border-radius: 4px 4px 0 0; width: 100%; min-height: 4px; transition: height 0.6s ease; }
+  .complaint-bar-label { font-size: 10px; color: var(--text-muted); text-align: center; }
+  .complaint-bar-count { font-size: 11px; font-weight: 700; }
+
+  .flag-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 32px; }
+  .flag-box p { font-size: 13px; line-height: 1.7; color: var(--text-muted); }
+  .flag-box strong { color: var(--text); }
+
+  .filters { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+  .filter-btn { padding: 6px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text-muted); cursor: pointer; font-size: 12px; font-weight: 500; transition: all 0.2s; }
+  .filter-btn:hover, .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  .review-grid { display: grid; gap: 12px; margin-bottom: 32px; }
+  .review-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; transition: border-color 0.2s; }
+  .review-card:hover { border-color: var(--accent); }
+  .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .review-meta { display: flex; gap: 8px; align-items: center; }
+  .review-stars { font-size: 14px; }
+  .review-date { font-size: 11px; color: var(--text-muted); }
+  .review-type { font-size: 10px; padding: 2px 6px; border-radius: 4px; background: var(--surface2); color: var(--text-muted); text-transform: uppercase; }
+  .review-title { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+  .review-text { font-size: 12px; color: var(--text-muted); line-height: 1.6; max-height: 60px; overflow: hidden; transition: max-height 0.3s; }
+  .review-text.expanded { max-height: 2000px; }
+  .review-toggle { font-size: 11px; color: var(--accent); cursor: pointer; margin-top: 4px; border: none; background: none; padding: 0; }
+  .review-toggle:hover { text-decoration: underline; }
+  .complaint-tag { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; text-transform: uppercase; }
+
+  footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 12px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Capital Hilton &mdash; Review Intelligence</h1>
+    <p>TripAdvisor + Yelp negative review analysis | 544 keys | Scraped 2026-04-08 | <strong>CONFIDENTIAL &mdash; Highgate Internal</strong></p>
+  </header>
+
+  <div class="kpi-row" id="kpis"></div>
+
+  <div class="flag-box" id="flag-box"></div>
+
+  <div class="grid-2">
+    <div class="card" id="breakdown-card">
+      <h3>Rating Breakdown</h3>
+      <div id="breakdown-bars"></div>
+    </div>
+    <div class="card">
+      <h3>Review Distribution</h3>
+      <div id="dist-bars"></div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>Complaint Categories (from scraped negatives)</h3>
+      <div class="complaint-chart" id="complaint-chart"></div>
+    </div>
+    <div class="card">
+      <h3>Reviewer Type Mix</h3>
+      <div class="complaint-chart" id="type-chart"></div>
+    </div>
+  </div>
+
+  <div class="section-title">Negative Reviews (1-2 Star)</div>
+  <div class="filters" id="filters"></div>
+  <div class="review-grid" id="reviews"></div>
+
+  <footer>
+    <p>Data source: TripAdvisor &amp; Yelp (scraped via Firecrawl CLI v1.12.2). Focus: 1-2 star reviews.</p>
+    <p>Generated for Highgate underwriting. Contact: Andrew Carras | US Assets Lead</p>
+  </footer>
+</div>
+
+<script>
+const COLORS = {
+  staff: '#ef4444', cleanliness: '#3b82f6', value: '#a855f7', maintenance: '#06b6d4',
+  room_quality: '#eab308', noise: '#f97316', fees: '#22c55e'
+};
+const LABELS = {
+  staff: 'Staff', cleanliness: 'Clean', value: 'Value', maintenance: 'Maint',
+  room_quality: 'Room', noise: 'Noise', fees: 'Fees'
+};
+const TYPE_COLORS = {
+  business: '#6366f1', solo: '#3b82f6', couple: '#a855f7', family: '#22c55e', other: '#8b8fa3'
+};
+
+fetch('data.json').then(r => r.json()).then(data => {
+  const p = data.property;
+  const reviews = data.reviews;
+  renderKPIs(p);
+  renderFlag(p);
+  renderBreakdown(p);
+  renderDistribution(p);
+  renderComplaints(p);
+  renderTypeChart(reviews);
+  renderFilters(reviews);
+  renderReviews(reviews);
+});
+
+function renderKPIs(p) {
+  const negPct = ((p.distribution['1'] + p.distribution['2']) / p.reviews * 100).toFixed(1);
+  document.getElementById('kpis').innerHTML = `
+    <div class="kpi"><div class="kpi-label">Overall Rating</div><div class="kpi-value" style="color:${rc(p.rating)}">${p.rating}</div><div class="kpi-sub">out of 5.0 (TripAdvisor)</div></div>
+    <div class="kpi"><div class="kpi-label">Total Reviews</div><div class="kpi-value">${p.reviews.toLocaleString()}</div><div class="kpi-sub">#22 of 158 hotels in DC</div></div>
+    <div class="kpi"><div class="kpi-label">Negative Reviews</div><div class="kpi-value" style="color:var(--red)">${(p.distribution['1']+p.distribution['2']).toLocaleString()}</div><div class="kpi-sub">${negPct}% of total (1-2 star)</div></div>
+    <div class="kpi"><div class="kpi-label">Lowest Category</div><div class="kpi-value" style="color:var(--red)">3.8</div><div class="kpi-sub">Value for Money</div></div>
+    <div class="kpi"><div class="kpi-label">Highest Category</div><div class="kpi-value" style="color:var(--green)">4.7</div><div class="kpi-sub">Location</div></div>
+    <div class="kpi"><div class="kpi-label">Status</div><div class="kpi-value"><span class="badge badge-watch">WATCH</span></div><div class="kpi-sub">monitor staff + cleanliness</div></div>
+  `;
+}
+
+function renderFlag(p) {
+  const parts = p.flag_detail.split(';').map(s => {
+    const t = s.trim();
+    const m = t.match(/^([A-Z]+)\s*[—–-]\s*(.*)/);
+    if (m) return `<strong>${m[1]}</strong> — ${m[2]}`;
+    return t;
+  });
+  document.getElementById('flag-box').innerHTML = `
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+      <span class="badge badge-watch">WATCH</span>
+      <span style="font-weight:600;font-size:14px">Intelligence Summary</span>
+    </div>
+    <p>${parts.join('<br>')}</p>
+  `;
+}
+
+function renderBreakdown(p) {
+  const cats = [
+    ['Location', p.breakdown.location],
+    ['Cleanliness', p.breakdown.cleanliness],
+    ['Comfort', p.breakdown.comfort],
+    ['Staff / Service', p.breakdown.staff],
+    ['Room Quality', p.breakdown.room],
+    ['Value', p.breakdown.value]
+  ];
+  let html = '';
+  cats.forEach(([label, val]) => {
+    const pct = ((val - 1) / 4) * 100;
+    html += `<div class="bar-row">
+      <div class="bar-label">${label}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:${rc(val)}"></div></div>
+      <div class="bar-value" style="color:${rc(val)}">${val}</div>
+    </div>`;
+  });
+  document.getElementById('breakdown-bars').innerHTML = html;
+}
+
+function renderDistribution(p) {
+  const max = Math.max(...Object.values(p.distribution));
+  let html = '';
+  for (let i = 5; i >= 1; i--) {
+    const count = p.distribution[i];
+    const pct = (count / max) * 100;
+    const color = i >= 4 ? 'var(--green)' : i === 3 ? 'var(--yellow)' : 'var(--red)';
+    html += `<div class="dist-row">
+      <div class="dist-label">${i}</div>
+      <div class="bar-track"><div class="dist-bar" style="width:${pct}%;background:${color}"></div></div>
+      <div class="dist-count">${count.toLocaleString()}</div>
+    </div>`;
+  }
+  document.getElementById('dist-bars').innerHTML = html;
+}
+
+function renderComplaints(p) {
+  const entries = Object.entries(p.complaint_counts).sort((a,b) => b[1] - a[1]);
+  const max = entries[0][1];
+  let html = '';
+  entries.forEach(([key, count]) => {
+    const h = (count / max) * 80;
+    const color = COLORS[key] || '#8b8fa3';
+    html += `<div class="complaint-col">
+      <div class="complaint-bar-count" style="color:${color}">${count}</div>
+      <div class="complaint-bar-v" style="height:${h}px;background:${color}"></div>
+      <div class="complaint-bar-label">${LABELS[key] || key}</div>
+    </div>`;
+  });
+  document.getElementById('complaint-chart').innerHTML = html;
+}
+
+function renderTypeChart(reviews) {
+  const types = {};
+  reviews.forEach(r => { types[r.type] = (types[r.type] || 0) + 1; });
+  const entries = Object.entries(types).sort((a,b) => b[1] - a[1]);
+  const max = entries[0][1];
+  let html = '';
+  entries.forEach(([key, count]) => {
+    const h = (count / max) * 80;
+    const color = TYPE_COLORS[key] || '#8b8fa3';
+    html += `<div class="complaint-col">
+      <div class="complaint-bar-count" style="color:${color}">${count}</div>
+      <div class="complaint-bar-v" style="height:${h}px;background:${color}"></div>
+      <div class="complaint-bar-label">${key}</div>
+    </div>`;
+  });
+  document.getElementById('type-chart').innerHTML = html;
+}
+
+function renderFilters(reviews) {
+  const complaints = [...new Set(reviews.map(r => r.complaint))];
+  let html = `<button class="filter-btn active" data-filter="all">All (${reviews.length})</button>`;
+  complaints.forEach(c => {
+    const count = reviews.filter(r => r.complaint === c).length;
+    html += `<button class="filter-btn" data-filter="${c}">${LABELS[c] || c} (${count})</button>`;
+  });
+  document.getElementById('filters').innerHTML = html;
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.review-card').forEach(card => {
+        card.style.display = (f === 'all' || card.dataset.complaint === f) ? '' : 'none';
+      });
+    });
+  });
+}
+
+function renderReviews(reviews) {
+  let html = '';
+  reviews.forEach((r, i) => {
+    const stars = r.rating === 1 ? '&#9733;' : '&#9733;&#9733;';
+    const starColor = r.rating === 1 ? 'var(--red)' : 'var(--orange)';
+    const tagColor = COLORS[r.complaint] || '#8b8fa3';
+    html += `<div class="review-card" data-complaint="${r.complaint}">
+      <div class="review-header">
+        <div class="review-meta">
+          <span class="review-stars" style="color:${starColor}">${stars}</span>
+          <span class="review-date">${r.date}</span>
+          <span class="review-type">${r.type}</span>
+          <span class="complaint-tag" style="background:${tagColor}22;color:${tagColor}">${LABELS[r.complaint] || r.complaint}</span>
+        </div>
+      </div>
+      <div class="review-title">${r.title}</div>
+      <div class="review-text" id="rt-${i}">${r.text}</div>
+      <button class="review-toggle" onclick="toggleReview(${i})">Show more</button>
+    </div>`;
+  });
+  document.getElementById('reviews').innerHTML = html;
+}
+
+function toggleReview(i) {
+  const el = document.getElementById('rt-' + i);
+  const btn = el.nextElementSibling;
+  el.classList.toggle('expanded');
+  btn.textContent = el.classList.contains('expanded') ? 'Show less' : 'Show more';
+}
+
+function rc(v) {
+  if (v >= 4.5) return '#22c55e';
+  if (v >= 4.2) return '#eab308';
+  if (v >= 4.0) return '#f97316';
+  return '#ef4444';
+}
+</script>
+</body>
+</html>

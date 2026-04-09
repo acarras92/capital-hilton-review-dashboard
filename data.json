@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "scrape_date": "2026-04-08",
+    "platform": "TripAdvisor + Yelp",
+    "focus": "negative_reviews_1_2_star"
+  },
+  "property": {
+    "code": "CAP",
+    "name": "Capital Hilton",
+    "keys": 544,
+    "address": "1001 16th St NW, Washington, DC 20036",
+    "market": "Washington DC",
+    "status": "mature",
+    "source_url": "https://www.tripadvisor.com/Hotel_Review-g28970-d84107-Reviews-Capital_Hilton-Washington_DC_District_of_Columbia.html",
+    "rating": 4.0,
+    "reviews": 5022,
+    "distribution": { "5": 2230, "4": 1485, "3": 747, "2": 342, "1": 218 },
+    "breakdown": {
+      "cleanliness": 4.2,
+      "location": 4.7,
+      "value": 3.8,
+      "staff": 4.1,
+      "room": 4.0,
+      "comfort": 4.2
+    },
+    "complaint_counts": {
+      "staff": 8,
+      "cleanliness": 5,
+      "value": 4,
+      "maintenance": 4,
+      "room_quality": 3,
+      "noise": 2,
+      "fees": 2
+    },
+    "flag": "WATCH",
+    "flag_detail": "STAFF — systemic privacy-sign violations and aggressive housekeeping; management dismissive of escalations; CLEANLINESS — bed bug infestation (Jul 2023, floors 4-5), recurring mold; FEES — mandatory $30/day destination fee generating friction; billing irregularities"
+  },
+  "reviews": [
+    {
+      "date": "February 2026",
+      "rating": 2,
+      "title": "Poor, unfriendly experience with poor housekeeping and a mad 'resort fee'",
+      "text": "Really didn't feel comfortable at this hotel. Apart from the lovely chap on the door, who gave me a hearty welcome each evening, I found the place generally unfriendly. The room rate included a mandatory extra $30 per day 'resort fee' which acted as a pre paid food and beverage charge which meant I felt obliged to eat at the hotel rather than eating with my colleagues who were staying at other hotels. I had to ask 3 times on one evening to have my room serviced, and had to wait for 2 hours in the bar/reception area while this was done. They were unable to provide me with a kettle/water boiler to make myself a cup of hot water or tea in my room, and the bar was not at all geared up to cater for people with food intolerances. Will certainly avoid this hotel in future visits, and it's put me off the Hilton chain.",
+      "type": "business",
+      "complaint": "fees"
+    },
+    {
+      "date": "January 2026",
+      "rating": 1,
+      "title": "Terrifying experience, rude staff!",
+      "text": "I had an absolutely terrifying experience here. There is no respect whatsoever for the privacy sign on the door and the staff culture is rotten to its core. A cleaning staff YELLED at me from down the hall about my privacy sign. Later, someone BANGED on my door for 10 minutes and PUSHED PAST ME into my room with a fruit tray meant for someone else. A second round of banging, then a third time they grabbed my room key and ran. When I reported it, the front desk couldn't have cared less. The manager basically laughed at me. He lied about comping my stay. I'm a Hilton honors member for decades and have never complained before now.",
+      "type": "business",
+      "complaint": "staff"
+    },
+    {
+      "date": "October 2025",
+      "rating": 1,
+      "title": "Worst hotel experience in 50 years of travel",
+      "text": "I returned to my room after being gone all day to find that housekeeping had entered and removed my personal belongings, valued at around $600. I immediately tried to report it, but there were no managers on duty. The head of security insisted their staff 'wouldn't do such a thing' and told me I could fill out a form. He refused to disclose names of employees who accessed my room, citing 'policy.' I am now filing a police report. This shows a complete lack of accountability, transparency, and guest safety.",
+      "type": "solo",
+      "complaint": "staff"
+    },
+    {
+      "date": "April 2025",
+      "rating": 1,
+      "title": "Good location; Poor service",
+      "text": "I'm extremely disappointed in the service. Body wash dispenser was empty mid-shower. After waiting an hour, we called the front desk again. Finally a HSKP agent arrived with no apology. Then I was told a package arrived at the Front Desk. A Front Desk agent greeted me unprofessionally as if I was disturbing his conversation. He said I needed to check the Bell Stand. After 10 minutes, they found the package... at the Front Desk. The only aspect working in Capital Hilton's favor is its location.",
+      "type": "couple",
+      "complaint": "staff"
+    },
+    {
+      "date": "February 2025",
+      "rating": 1,
+      "title": "Terrible restaurant food, not worth the price",
+      "text": "I am a Hilton employee and work in F&B. The carbonara had no flavor and pieces of egg were in it. The Peruvian stir fry had inedible beef, so tough, and the only flavor was oil. The Caesar salad too. The meal was $88 and not worth the price at all.",
+      "type": "couple",
+      "complaint": "value"
+    },
+    {
+      "date": "February 2025",
+      "rating": 1,
+      "title": "Odd accounting practices and unexplained charges",
+      "text": "Odd accounting practices at this hotel. I noted strange activity on my card statement the hotel refused to explain or itemize. A hotel stay charge, then a $99 authorization and then another $197 charge? For a 1 night stay. A total of $423 in charges and authorizations, and they want 24-72 hours to figure it out. This is a rip-off. I'm a rewards member.",
+      "type": "solo",
+      "complaint": "fees"
+    },
+    {
+      "date": "July 2024",
+      "rating": 1,
+      "title": "Lost $1,744 on unused rooms — no cancellation policy",
+      "text": "Do not book! Read the fine print. Booked two rooms for an expected trip. More than two weeks prior the trip was pushed. No cancellation or change policy through Expedia/Delta Trips. Two rooms two nights unused down $1,744.52.",
+      "type": "business",
+      "complaint": "value"
+    },
+    {
+      "date": "April 2024",
+      "rating": 1,
+      "title": "Absolute trash of a hotel",
+      "text": "The first room had pubic hair in the bathroom. The upgraded room also had hair in the shower. Months old ice in the refrigerator. Mandatory destination credit was a bait and switch. Water shut off for all guests with zero communication for hours while staff watched the eclipse. Repeatedly misgendered by staff. Shift manager called at 11:30pm. Reported to the Attorney General's office.",
+      "type": "couple",
+      "complaint": "cleanliness"
+    },
+    {
+      "date": "September 2023",
+      "rating": 1,
+      "title": "Bed bug infestation — had to visit urgent care",
+      "text": "Stayed for a national conference on the 5th floor. Bed bug infestation announced on 4th and 5th floors. After getting home, tiny red dots swelled up to quarter-sized bright red bumps. Had to go to urgent care for prescription antihistamine and steroid medication. Called the hotel — they promised to call back. It's now September and not one rep has contacted me.",
+      "type": "business",
+      "complaint": "cleanliness"
+    },
+    {
+      "date": "July 2023",
+      "rating": 2,
+      "title": "Bed bugs on 4th floor, staff difficult to work with",
+      "text": "At least four rooms on the fourth floor experienced bed bugs and one person had to go to the hospital. Major public health concern. All convention goers were given instructions on treating belongings. My room on the fifth floor was fine, but no mini fridge. As a conference organizer, the staff wasn't the easiest to work with.",
+      "type": "business",
+      "complaint": "cleanliness"
+    },
+    {
+      "date": "July 2023",
+      "rating": 1,
+      "title": "Worst Hilton — small room, broken thermostat",
+      "text": "The worst Hilton I have ever stayed at. Room was small and cramped. No outlets anywhere — had to move coffee maker to the bathroom. Thermostat did not work, room was hot and humid. No room service. Terrible coffee. Staff was not friendly and did not care that I was a Hilton Honors member.",
+      "type": "solo",
+      "complaint": "room_quality"
+    },
+    {
+      "date": "July 2023",
+      "rating": 1,
+      "title": "Privacy sign ignored, promised points never delivered",
+      "text": "Housekeeping opened my door at 8:30am despite a privacy sign. I informed them of late checkout approval and they still came back a second time. Was promised 10,000 points by Daniel at checkout — never received them. Being a Gold Hilton Honors member I did not appreciate feeling 'rushed' to exit my room.",
+      "type": "solo",
+      "complaint": "staff"
+    },
+    {
+      "date": "May 2023",
+      "rating": 1,
+      "title": "Overbooked and lied about room type",
+      "text": "They were OVERBOOKED and did nothing to accommodate. Reserved a deluxe 2-queen suite for Cherry Blossom race weekend. Assured at check-in I had it. Got to the room — not a suite, only one bed. On the phone for 30 minutes, all I got was an apology. Couldn't provide a cot due to room size. Reservation was so poorly handled I will never consider staying here again.",
+      "type": "other",
+      "complaint": "staff"
+    },
+    {
+      "date": "April 2023",
+      "rating": 1,
+      "title": "Worst internet on the planet",
+      "text": "DO NOT book if you need technology! Had better internet on my flight from LA than in my hotel room. Desk staff offered no hope. Told to use the Business Center for my presentation. Should be renamed to Capital Motel.",
+      "type": "business",
+      "complaint": "maintenance"
+    },
+    {
+      "date": "January 2023",
+      "rating": 1,
+      "title": "Mold everywhere — Diamond Member says Red Roof is better",
+      "text": "Diamond Member and this is THE WORST hotel I've been at. Most dated rooms and bathrooms. Staff always miserable. All 3 times I stayed, shower curtain was moldy or the room smells like mold. Rooms don't have real curtains — just sheer 'privacy' ones so anyone can see in. Highly overpriced restaurant. Red Roof Inns are better.",
+      "type": "business",
+      "complaint": "cleanliness"
+    },
+    {
+      "date": "December 2022",
+      "rating": 1,
+      "title": "Mold, security issues, loud guests — 40-week/year Diamond traveler",
+      "text": "Worst Hilton I've stayed at, and I spend 40 weeks per year in hotels. Had to beg for complimentary water. Mold smell throughout. First room had windows with no locks or screens — security issue. Second room was smaller but mold smell worse. Security wouldn't enforce noise from belligerent guests. Front desk calls went unanswered. The general feeling is ghetto trash.",
+      "type": "business",
+      "complaint": "cleanliness"
+    },
+    {
+      "date": "November 2022",
+      "rating": 1,
+      "title": "Loud party below, front desk ignored calls",
+      "text": "A loud party below us. Multiple calls to the front desk went ignored. Music BLARING and shaking the lamps well past 1 am. My entire family, including my child, could not sleep. Worst Hilton I've ever stayed at.",
+      "type": "family",
+      "complaint": "noise"
+    },
+    {
+      "date": "October 2022",
+      "rating": 1,
+      "title": "Reservation canceled, stranded in DC at night",
+      "text": "After having already paid, they canceled my reservation and left me without a place to stay. A kind stranger walked with me through the streets of DC at night with my luggage to find a hotel. Staff shrugged and said 'Call Corporate.' Corporate said 'Here's some points.' I will never stay at another Hilton.",
+      "type": "solo",
+      "complaint": "staff"
+    }
+  ]
+}
