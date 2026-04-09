@@ -1,0 +1,224 @@
+{
+  "generated_date": "2026-04-09",
+  "market": "Washington DC",
+  "subject_hotel": "Capital Hilton",
+  "comp_set_summary": [
+    {
+      "hotel": "Capital Hilton",
+      "asset_code": "CAP-HIL",
+      "keys": 544,
+      "overall_rating": 4.0,
+      "review_count": 5022,
+      "negative_pct": 11.2,
+      "dominant_complaints": ["staff_service", "cleanliness", "fees"],
+      "rating_breakdown": {
+        "cleanliness": 4.2,
+        "location": 4.7,
+        "value_for_money": 3.8,
+        "staff_service": 4.1,
+        "room_quality": 4.0,
+        "comfort": 4.2
+      },
+      "complaint_counts": {
+        "staff": 8,
+        "cleanliness": 5,
+        "value": 4,
+        "maintenance": 4,
+        "room_quality": 3,
+        "noise": 2,
+        "fees": 2
+      },
+      "flag": "STAFF — systemic privacy-sign violations and aggressive housekeeping; management dismissive of escalations; CLEANLINESS — bed bug infestation (Jul 2023, floors 4-5), recurring mold; FEES — mandatory $30/day destination fee generating friction; billing irregularities"
+    },
+    {
+      "hotel": "Hyatt Regency Washington on Capitol Hill",
+      "asset_code": "HYA-CAP",
+      "keys": 840,
+      "overall_rating": 3.9,
+      "review_count": 4892,
+      "negative_pct": 19.5,
+      "dominant_complaints": ["value", "staff_service", "room_quality"],
+      "rating_breakdown": {
+        "cleanliness": 3.9,
+        "location": 4.5,
+        "value_for_money": 3.4,
+        "staff_service": 3.7,
+        "room_quality": 3.6,
+        "comfort": 3.8
+      },
+      "complaint_counts": {
+        "staff": 7,
+        "cleanliness": 5,
+        "value": 9,
+        "maintenance": 5,
+        "room_quality": 6,
+        "noise": 4,
+        "fees": 1
+      },
+      "flag": "VALUE — extremely expensive parking, hidden fees, overpriced F&B; STAFF — chronically understaffed; ROOMS — small and dated pre-renovation; construction noise ongoing"
+    },
+    {
+      "hotel": "The Westin Washington, D.C. City Center",
+      "asset_code": "WST-DC",
+      "keys": 410,
+      "overall_rating": 4.2,
+      "review_count": 4285,
+      "negative_pct": 8.8,
+      "dominant_complaints": ["value", "room_quality", "maintenance"],
+      "rating_breakdown": {
+        "cleanliness": 4.4,
+        "location": 4.6,
+        "value_for_money": 3.8,
+        "staff_service": 4.3,
+        "room_quality": 4.0,
+        "comfort": 4.1
+      },
+      "complaint_counts": {
+        "staff": 3,
+        "cleanliness": 3,
+        "value": 6,
+        "maintenance": 5,
+        "room_quality": 5,
+        "noise": 3,
+        "fees": 1
+      },
+      "flag": "VALUE — high pricing vs. room quality; ROOMS — atrium-facing rooms lack views; electrical outlet design flaw; rooms need facelift despite Travelers' Choice"
+    },
+    {
+      "hotel": "JW Marriott Washington, DC",
+      "asset_code": "JWM-DC",
+      "keys": 777,
+      "overall_rating": 4.0,
+      "review_count": 3872,
+      "negative_pct": 16.1,
+      "dominant_complaints": ["room_quality", "value", "noise"],
+      "rating_breakdown": {
+        "cleanliness": 4.1,
+        "location": 4.7,
+        "value_for_money": 3.4,
+        "staff_service": 3.9,
+        "room_quality": 3.6,
+        "comfort": 3.7
+      },
+      "complaint_counts": {
+        "staff": 4,
+        "cleanliness": 3,
+        "value": 7,
+        "maintenance": 5,
+        "room_quality": 8,
+        "noise": 6,
+        "fees": 0
+      },
+      "flag": "ROOMS — dated, small, fixtures rusting; NOISE — paper-thin walls; elevator waits 20-30 min; VALUE — valet-only parking $69/night; food quality poor for price"
+    },
+    {
+      "hotel": "The Mayflower Hotel, Autograph Collection",
+      "asset_code": "MAY-DC",
+      "keys": 585,
+      "overall_rating": 4.0,
+      "review_count": 3340,
+      "negative_pct": 15.9,
+      "dominant_complaints": ["room_quality", "cleanliness", "maintenance"],
+      "rating_breakdown": {
+        "cleanliness": 3.9,
+        "location": 4.6,
+        "value_for_money": 3.6,
+        "staff_service": 4.0,
+        "room_quality": 3.7,
+        "comfort": 3.8
+      },
+      "complaint_counts": {
+        "staff": 4,
+        "cleanliness": 6,
+        "value": 5,
+        "maintenance": 6,
+        "room_quality": 7,
+        "noise": 3,
+        "fees": 1
+      },
+      "flag": "ROOMS — beautiful lobby, outdated rooms; CLEANLINESS — stains, used items left in rooms; MAINTENANCE — chronic HVAC failures; no room service despite luxury positioning"
+    },
+    {
+      "hotel": "Le Méridien Washington, D.C., The Madison",
+      "asset_code": "LMD-DC",
+      "keys": 356,
+      "overall_rating": 4.1,
+      "review_count": 4344,
+      "negative_pct": 10.7,
+      "dominant_complaints": ["value", "room_quality", "maintenance"],
+      "rating_breakdown": {
+        "cleanliness": 4.2,
+        "location": 4.5,
+        "value_for_money": 3.7,
+        "staff_service": 4.1,
+        "room_quality": 3.9,
+        "comfort": 4.0
+      },
+      "complaint_counts": {
+        "staff": 4,
+        "cleanliness": 4,
+        "value": 7,
+        "maintenance": 5,
+        "room_quality": 6,
+        "noise": 5,
+        "fees": 1
+      },
+      "flag": "VALUE — expensive parking, hidden fees; brand positioning unclear between luxury and boutique; ROOMS — small, no pool, limited amenities; MAINTENANCE — hot water delays; HVAC leaks"
+    },
+    {
+      "hotel": "Hamilton Hotel Washington, D.C.",
+      "asset_code": "HAM-DC",
+      "keys": 326,
+      "overall_rating": 4.0,
+      "review_count": 1413,
+      "negative_pct": 15.1,
+      "dominant_complaints": ["cleanliness", "room_quality", "noise"],
+      "rating_breakdown": {
+        "cleanliness": 3.8,
+        "location": 4.5,
+        "value_for_money": 3.7,
+        "staff_service": 4.0,
+        "room_quality": 3.6,
+        "comfort": 3.7
+      },
+      "complaint_counts": {
+        "staff": 3,
+        "cleanliness": 7,
+        "value": 4,
+        "maintenance": 4,
+        "room_quality": 6,
+        "noise": 5,
+        "fees": 1
+      },
+      "flag": "CLEANLINESS — cockroaches in restaurant; unchanged sheets; metal debris in beds; ROOMS — very small 'executive' rooms; views into adjacent offices; NOISE — paper-thin walls; machine room proximity"
+    }
+  ],
+  "competitive_intel": {
+    "highest_rated": "The Westin Washington, D.C. City Center",
+    "highest_rated_score": 4.2,
+    "lowest_rated": "Hyatt Regency Washington on Capitol Hill",
+    "lowest_rated_score": 3.9,
+    "comp_set_average_rating": 4.03,
+    "comp_set_average_negative_pct": 13.9,
+    "shared_complaint_themes": [
+      "Value/pricing — All 7 hotels face complaints about high parking costs ($55-69/night), destination/resort fees, and overpriced F&B. This is a systemic DC luxury market issue, not Capital Hilton-specific.",
+      "Room quality/aging product — 5 of 7 hotels have significant complaints about dated rooms, worn furnishings, and rooms that don't match lobby renovations. DC's historic building stock creates persistent capex challenges.",
+      "Maintenance/HVAC — 5 of 7 hotels report HVAC and climate control issues. Older DC buildings have aging mechanical systems that are expensive to replace.",
+      "Noise — 4 of 7 hotels face noise complaints from thin walls, street noise, or mechanical systems. Historic construction with limited sound insulation is a market-wide issue.",
+      "Billing irregularities — 4 of 7 hotels have complaints about erroneous charges, unclear fees, or difficulty getting refunds."
+    ],
+    "capital_hilton_unique_risks": [
+      "Staff culture — Capital Hilton has the highest staff complaint count (8) in the comp set. Privacy sign violations, aggressive housekeeping, and dismissive management are unique to this property and represent a systemic culture issue, not just individual incidents.",
+      "Bed bug history — The July 2023 infestation across floors 4-5 is the most severe pest incident in the comp set. Only the Hamilton had cockroach reports. Bed bugs carry outsized reputational risk and can resurface.",
+      "Mold recurrence — Multiple reports of mold in bathrooms and rooms, spanning 2022-2025. No other comp hotel has recurring mold complaints at this frequency.",
+      "Destination fee friction — While resort fees are common, Capital Hilton's $30/day mandatory fee generates uniquely high guest friction, especially the structure as a pre-paid F&B credit that restricts dining flexibility."
+    ],
+    "capital_hilton_relative_strengths": [
+      "Higher cleanliness rating (4.2) than Hyatt Regency (3.9), Mayflower (3.9), and Hamilton (3.8) despite cleanliness complaints in negative reviews.",
+      "Stronger staff/service rating (4.1) than JW Marriott (3.9) and Hyatt Regency (3.7), despite staff being the #1 complaint category — suggests issues are concentrated in a small but impactful number of incidents.",
+      "Best location rating in comp set (4.7, tied with JW Marriott) — 16th and K Street location is viewed as superior to most competitors.",
+      "Lower negative review percentage (11.2%) than Hyatt Regency (19.5%), JW Marriott (16.1%), Mayflower (15.9%), and Hamilton (15.1%). Only Westin (8.8%) and Le Méridien (10.7%) are lower.",
+      "Room quality rating (4.0) is better than JW Marriott (3.6), Hamilton (3.6), and Mayflower (3.7), suggesting rooms are in better condition than several peers despite age."
+    ]
+  }
+}

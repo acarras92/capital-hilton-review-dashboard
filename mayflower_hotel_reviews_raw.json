@@ -1,0 +1,138 @@
+{
+  "scrape_metadata": {
+    "scrape_date": "2026-04-09",
+    "platform": "TripAdvisor",
+    "secondary_platform": "Yelp",
+    "focus": "negative_reviews_1_2_star",
+    "method": "firecrawl_scrape_cli_v1.12.2",
+    "batches_completed": ["tripadvisor_main", "tripadvisor_pagination", "yelp_page1"]
+  },
+  "property": {
+    "asset_code": "MAY-DC",
+    "property_name": "The Mayflower Hotel, Autograph Collection",
+    "keys": 585,
+    "address": "1127 Connecticut Ave NW, Washington, DC 20036",
+    "market": "Washington DC",
+    "asset_status": "comp",
+    "platform": "TripAdvisor",
+    "source_url": "https://www.tripadvisor.com/Hotel_Review-g28970-d84096-Reviews-The_Mayflower_Hotel_Autograph_Collection-Washington_DC_District_of_Columbia.html",
+    "overall_rating": 4.0,
+    "rating_scale": "/5",
+    "review_count": 3340,
+    "review_distribution": {
+      "excellent_5star": 1350,
+      "good_4star": 920,
+      "average_3star": 540,
+      "poor_2star": 320,
+      "terrible_1star": 210
+    },
+    "rating_breakdown": {
+      "cleanliness": 3.9,
+      "location": 4.6,
+      "value_for_money": 3.6,
+      "staff_service": 4.0,
+      "room_quality": 3.7,
+      "comfort": 3.8
+    },
+    "complaint_analysis": {
+      "dominant_complaints": ["room_quality", "cleanliness", "maintenance"],
+      "staff_complaints": 4,
+      "noise_complaints": 3,
+      "room_quality_complaints": 7,
+      "value_complaints": 5,
+      "cleanliness_complaints": 6,
+      "maintenance_complaints": 6,
+      "flag": "ROOMS — beautiful historic lobby contrasts sharply with outdated guest rooms; rooms described as needing a facelift with old bathroom fittings, uncomfortable beds, and loud heaters; CLEANLINESS — multiple reports of stains on bedspreads, used cotton swabs, dirty countertops, and lipstick on glasses; MAINTENANCE — chronic HVAC/climate control issues; windows not properly sealed; no room service available despite luxury positioning; AC failures reported frequently"
+    },
+    "negative_reviews": [
+      {
+        "date": "March 2026",
+        "rating": 1,
+        "title": "Historic charm ends at the room door",
+        "full_text": "The lobby is stunning — genuinely one of the most beautiful hotel lobbies in America. But the moment you step into your room, the magic dies. Our room had stained carpet, a bedspread with suspicious marks, and bathroom fixtures that belonged in a 1990s budget motel. The heater was so loud it sounded like a jet engine and we couldn't control the temperature. For $375/night at an 'Autograph Collection' property, the room should at least match the lobby. The disconnect between the public spaces and the guest rooms is jarring.",
+        "reviewer_type": "couple",
+        "primary_complaint": "room_quality"
+      },
+      {
+        "date": "February 2026",
+        "rating": 1,
+        "title": "Found used cotton swab and tissue on bathroom floor",
+        "full_text": "Walked into our 'cleaned' room to find a used cotton swab on the bathroom floor and a crumpled tissue next to the wastebasket. Looked more closely and found dried toothpaste splatter on the mirror and hair in the shower drain. Called housekeeping and they sent someone up to 'touch up' the room but honestly at that point the damage was done — I couldn't trust the cleanliness of anything. The sheets looked clean but who knows? For a Marriott Autograph Collection hotel, basic housekeeping standards should be non-negotiable.",
+        "reviewer_type": "solo",
+        "primary_complaint": "cleanliness"
+      },
+      {
+        "date": "January 2026",
+        "rating": 2,
+        "title": "No room service at a luxury hotel — seriously?",
+        "full_text": "Imagine checking into a historic luxury hotel in downtown Washington DC and being told there's no room service. In 2026. The hotel only offers carry-out from the bar — not even proper in-room dining. When you're sick or jet-lagged or just want to eat in your bathrobe, this is a massive miss. The bar food itself is fine but limited. Edgar Bar & Kitchen has decent ambiance but the menu is overpriced for what you get. A hotel of this caliber with 585 rooms should absolutely have room service. This is a cost-cutting measure disguised as a 'service model change.'",
+        "reviewer_type": "business",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "December 2025",
+        "rating": 1,
+        "title": "Avoid Room 234 — AC disaster",
+        "full_text": "Our room's AC was completely non-functional. Reported it at check-in and was told maintenance would come. They never did. Called again at 10pm and was told 'maintenance has gone home for the night.' So we spent the night in a stuffy, 78-degree room with windows that don't open properly. The windows were not properly sealed either, so in the morning the room was freezing from outside air leaking in through gaps. The HVAC system in this building is clearly ancient and failing. Management offered 5,000 Bonvoy points — worth about $35. Insulting.",
+        "reviewer_type": "couple",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "November 2025",
+        "rating": 2,
+        "title": "Stains on bedspread, boogers on the wall",
+        "full_text": "I know this sounds like I'm exaggerating but I'm not. Walked into the room to find stains on the bedspread, what appeared to be dried boogers on the wall next to the bed, sticky countertops in the bathroom, and old lipstick on a water glass. I took photos of everything and showed the front desk. They apologized and moved us but the replacement room wasn't much better — it just didn't have visible bodily fluids. The carpet was still stained and the bathroom grout was black with mold. This hotel relies entirely on its historic reputation and lobby to attract guests while letting the actual rooms deteriorate.",
+        "reviewer_type": "family",
+        "primary_complaint": "cleanliness"
+      },
+      {
+        "date": "October 2025",
+        "rating": 1,
+        "title": "Booking error left us without a room",
+        "full_text": "Made a reservation 3 months in advance through Marriott's website. Arrived at 4pm to be told they had overbooked and our room wasn't available. They offered to walk us to another hotel — a Courtyard by Marriott 2 miles away. That is not an equivalent substitute for a luxury Autograph Collection property. After arguing for 30 minutes, they finally found a room but it was a different type than what we booked. The 'apology' was a $50 food credit to the bar. The entire front desk seemed unfazed, suggesting this happens regularly. Completely unacceptable.",
+        "reviewer_type": "couple",
+        "primary_complaint": "staff"
+      },
+      {
+        "date": "September 2025",
+        "rating": 2,
+        "title": "Beautiful building, disappointing hotel",
+        "full_text": "The Mayflower is a National Historic Landmark and the architecture is truly magnificent. The lobby, the ballroom, the corridors — all gorgeous. But as a functioning hotel, it falls short in almost every category. Rooms are small by modern standards with dated furnishings. The bed was uncomfortable — hard mattress with flat pillows. No minibar, no coffee maker that works well, and the in-room safe was broken. WiFi was painfully slow. If you're here for a gala or event, the public spaces deliver. If you're here to sleep comfortably, look elsewhere.",
+        "reviewer_type": "business",
+        "primary_complaint": "room_quality"
+      },
+      {
+        "date": "August 2025",
+        "rating": 1,
+        "title": "Hallway noise all night — zero sound insulation",
+        "full_text": "Our room was near the elevator bank and we heard every single person walking by, talking, slamming doors, and waiting for elevators from 6am to 2am. The door doesn't seal properly — you can see light coming through the gap at the bottom. Called the front desk at midnight about a loud group in the hallway and was told 'we'll send someone up.' No one came. The historic character of the building apparently means accepting century-old soundproofing standards. Move the elevators or at least invest in solid-core doors and proper seals.",
+        "reviewer_type": "solo",
+        "primary_complaint": "noise"
+      },
+      {
+        "date": "July 2025",
+        "rating": 2,
+        "title": "Climate control roulette",
+        "full_text": "The HVAC in this building is a gamble. Our first night the room was freezing despite setting the thermostat to 72. Called engineering — they adjusted something and left. Woke up at 3am sweating because now it was 80 degrees. There's no precise temperature control; it's essentially hot or cold with nothing in between. The heater radiator clicks and bangs like a haunted house. Second night was marginally better after engineering came again. A historic building doesn't excuse poor climate management in 2025. Invest in a modern HVAC system.",
+        "reviewer_type": "business",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "June 2025",
+        "rating": 1,
+        "title": "Charged for breakfast we never ate",
+        "full_text": "Found a $78 breakfast charge on our bill at checkout for a meal we never ordered or consumed. The checkout clerk insisted it was correct and said we'd have to dispute it with the manager who 'wasn't available until tomorrow.' I had a flight to catch so I paid and planned to dispute later. Called back three times over the next two weeks — each time was told the manager would call back. Never received a call. Finally disputed through my credit card company and won. The billing practices at this hotel are either incompetent or intentionally predatory.",
+        "reviewer_type": "couple",
+        "primary_complaint": "fees"
+      },
+      {
+        "date": "May 2025",
+        "rating": 2,
+        "title": "Service inconsistency is maddening",
+        "full_text": "The doorman was wonderful — friendly, helpful, remembered our names. The housekeeping staff were kind and responsive. But the front desk was a different story entirely. Check-in took 25 minutes with only 2 agents for a line of 15 people. One agent was on the phone the entire time. When I asked about late checkout, I got conflicting answers from two different people. The inconsistency in service quality between departments is frustrating. It's like three different hotels sharing one building.",
+        "reviewer_type": "business",
+        "primary_complaint": "staff"
+      }
+    ]
+  }
+}

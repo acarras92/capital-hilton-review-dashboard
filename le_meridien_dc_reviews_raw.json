@@ -1,0 +1,130 @@
+{
+  "scrape_metadata": {
+    "scrape_date": "2026-04-09",
+    "platform": "TripAdvisor",
+    "secondary_platform": "Yelp",
+    "focus": "negative_reviews_1_2_star",
+    "method": "firecrawl_scrape_cli_v1.12.2",
+    "batches_completed": ["tripadvisor_main", "tripadvisor_pagination", "yelp_page1"]
+  },
+  "property": {
+    "asset_code": "LMD-DC",
+    "property_name": "Le Méridien Washington, D.C., The Madison",
+    "keys": 356,
+    "address": "1177 15th St NW, Washington, DC 20005",
+    "market": "Washington DC",
+    "asset_status": "comp",
+    "platform": "TripAdvisor",
+    "source_url": "https://www.tripadvisor.com/Hotel_Review-g28970-d84122-Reviews-Le_Meridien_Washington_D_C_The_Madison-Washington_DC_District_of_Columbia.html",
+    "overall_rating": 4.1,
+    "rating_scale": "/5",
+    "review_count": 4344,
+    "review_distribution": {
+      "excellent_5star": 2020,
+      "good_4star": 1280,
+      "average_3star": 580,
+      "poor_2star": 290,
+      "terrible_1star": 174
+    },
+    "rating_breakdown": {
+      "cleanliness": 4.2,
+      "location": 4.5,
+      "value_for_money": 3.7,
+      "staff_service": 4.1,
+      "room_quality": 3.9,
+      "comfort": 4.0
+    },
+    "complaint_analysis": {
+      "dominant_complaints": ["value", "room_quality", "maintenance"],
+      "staff_complaints": 4,
+      "noise_complaints": 5,
+      "room_quality_complaints": 6,
+      "value_complaints": 7,
+      "cleanliness_complaints": 4,
+      "maintenance_complaints": 5,
+      "flag": "VALUE — parking extremely expensive; unexpected fees; falls in no-man's land between recognizable brands and boutique uniqueness; ROOMS — small rooms with limited amenities; no pool; ice machines on only two floors; NOISE — hallway noise and HVAC noise complaints; MAINTENANCE — shower warm-up times of 10+ minutes reported; room cleanliness inconsistent; overbooking incidents with poor resolution; billing errors and unresponsive follow-up"
+    },
+    "negative_reviews": [
+      {
+        "date": "March 2026",
+        "rating": 1,
+        "title": "Would NOT recommend — overbooking disaster",
+        "full_text": "Booked a twin room 9 months in advance through a third-party provider and confirmed via email. Upon check-in, they gave us a king bed instead. Management blamed overbooking and 'flooding issues' but offered only a lumpy trundle bed or a discounted room rather than a proper second bed. The trundle was placed in front of a loud air conditioner. Room was not properly cleaned — hair on the bathroom floor and water stains on the mirror. Hallway noise was constant. To top it off, they charged us for the complimentary breakfast and after 3 weeks of follow-up emails, still haven't refunded the erroneous charge.",
+        "reviewer_type": "family",
+        "primary_complaint": "staff"
+      },
+      {
+        "date": "February 2026",
+        "rating": 2,
+        "title": "Shower takes 10 minutes to warm up",
+        "full_text": "Every morning I had to run the shower for 10 minutes before it produced hot water. That's not a minor inconvenience — it's a plumbing failure. When I reported it to the front desk, they said it was 'a known issue on that floor' and offered to move me. But I was already unpacked for a 4-night stay. Engineering came and said the hot water system has long pipe runs and there's nothing they can do. So the hotel knows about a systemic plumbing issue and their solution is to apologize? At $350/night, I expect hot water on demand.",
+        "reviewer_type": "business",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "January 2026",
+        "rating": 1,
+        "title": "Not a luxury hotel — don't be fooled",
+        "full_text": "Le Méridien positions itself as a lifestyle luxury brand but this property is anything but. Room was small — barely room to open a suitcase. No minibar, no pool, no room service, no bathrobe. Ice machines are on only two floors so good luck making the trek at midnight. The 'art program' in the lobby is nice but doesn't compensate for a subpar in-room experience. The hotel can't compete on amenities with brands like Westin or JW Marriott, and it's not unique or charming enough to compete as a boutique. It's stuck in a no-man's land.",
+        "reviewer_type": "solo",
+        "primary_complaint": "room_quality"
+      },
+      {
+        "date": "December 2025",
+        "rating": 2,
+        "title": "Parking is $60/night — outrageous",
+        "full_text": "The hotel charges $60/night for parking with no in-and-out privileges. So if you drive to dinner, you pay again. The garage is also not hotel-owned, so any complaints about your car go to a third party who doesn't care. Our car had a new scratch when we retrieved it — the hotel said to take it up with the parking company. The parking company said to take it up with our insurance. $180 in parking fees over 3 nights and my car came back damaged. Beyond parking, the room was fine but unremarkable. Staff were friendly but the overall value proposition is weak.",
+        "reviewer_type": "family",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "November 2025",
+        "rating": 1,
+        "title": "Hallway noise made sleep impossible",
+        "full_text": "Our room was on the 4th floor near the elevator and stairwell. Heard every person coming and going from 6am to past midnight — footsteps, talking, doors slamming. The HVAC system added a constant low hum that was maddening. Asked the front desk for a room change and was told nothing was available. Tried white noise on my phone but the hallway noise was louder. Ended up sleeping maybe 3 hours total over a 2-night stay. The historic building character is lovely but the soundproofing is from another century. This alone would prevent me from returning.",
+        "reviewer_type": "business",
+        "primary_complaint": "noise"
+      },
+      {
+        "date": "October 2025",
+        "rating": 2,
+        "title": "Clean but soul-less",
+        "full_text": "The room was clean and the bed was comfortable. I'll give them that. But the room had zero personality — white walls, generic art, basic fixtures. Nothing about it said 'Le Méridien' or 'The Madison' or even 'Washington DC.' It could have been a Hampton Inn room with slightly better linens. The bathroom was tiny with a shower stall barely big enough to turn around in. For a hotel that markets itself on creativity and culture, the rooms are shockingly generic. The lobby and common areas are the opposite — beautifully designed with interesting art. The rooms just don't deliver.",
+        "reviewer_type": "couple",
+        "primary_complaint": "room_quality"
+      },
+      {
+        "date": "September 2025",
+        "rating": 1,
+        "title": "Charged for breakfast I didn't eat — again",
+        "full_text": "Reading other reviews, I see I'm not the only person who's been wrongly charged for breakfast. I was charged $42 for a breakfast I never ordered. Noticed it on my credit card statement a week after checkout. Called the hotel four times — left voicemails, was transferred to a manager who was never available. Finally got through after 3 weeks and they agreed to refund. This seems to be a systemic billing issue, not a one-off error. If you stay here, photograph your bill at checkout and scrutinize every charge.",
+        "reviewer_type": "business",
+        "primary_complaint": "fees"
+      },
+      {
+        "date": "August 2025",
+        "rating": 2,
+        "title": "Location is great, hotel is forgettable",
+        "full_text": "Two blocks from the White House, easy walk to everything downtown. The location genuinely is excellent. But the hotel itself is forgettable. Nothing about the stay was memorable — the room was adequate, the staff were polite but not warm, the coffee in the lobby was mediocre. For a brand that's supposed to be about 'unlocking the destination,' this hotel does nothing to connect you to DC. No concierge recommendations, no local partnerships, no sense of place. You could be in any city. Fine for a night but I wouldn't seek it out.",
+        "reviewer_type": "solo",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "July 2025",
+        "rating": 1,
+        "title": "HVAC leak destroyed my laptop",
+        "full_text": "Woke up at 2am to water dripping from the HVAC unit above the desk — directly onto my open laptop. The laptop was destroyed. Called engineering immediately and they came to put a bucket under the leak. A BUCKET. Management's response the next day was to deny liability because the damage happened to 'personal property.' After weeks of escalation through Marriott corporate, they offered a $200 hotel credit. My laptop was worth $1,800. I'm now pursuing this through my homeowner's insurance but the hotel's complete lack of accountability is staggering.",
+        "reviewer_type": "business",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "June 2025",
+        "rating": 2,
+        "title": "Underwhelming Platinum experience",
+        "full_text": "As a Marriott Platinum member, I've come to expect a certain level of recognition. At Le Méridien Madison, I got none. No upgrade despite light occupancy (I counted empty rooms on my floor). No welcome amenity. Late checkout was 'not available' despite asking at check-in. The room was clean but small, and the pillows were oddly flat. The breakfast credit was the only elite benefit I actually received. Compare this to the Westin down the road which consistently delivers excellent Platinum benefits. Le Méridien either doesn't understand the loyalty program or doesn't care.",
+        "reviewer_type": "business",
+        "primary_complaint": "staff"
+      }
+    ]
+  }
+}

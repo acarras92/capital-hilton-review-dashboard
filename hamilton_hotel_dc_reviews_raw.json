@@ -1,0 +1,130 @@
+{
+  "scrape_metadata": {
+    "scrape_date": "2026-04-09",
+    "platform": "TripAdvisor",
+    "secondary_platform": "Yelp",
+    "focus": "negative_reviews_1_2_star",
+    "method": "firecrawl_scrape_cli_v1.12.2",
+    "batches_completed": ["tripadvisor_main", "tripadvisor_pagination", "yelp_page1"]
+  },
+  "property": {
+    "asset_code": "HAM-DC",
+    "property_name": "Hamilton Hotel Washington, D.C.",
+    "keys": 326,
+    "address": "1001 14th St NW, Washington, DC 20005",
+    "market": "Washington DC",
+    "asset_status": "comp",
+    "platform": "TripAdvisor",
+    "source_url": "https://www.tripadvisor.com/Hotel_Review-g28970-d120614-Reviews-Hamilton_Hotel-Washington_DC_District_of_Columbia.html",
+    "overall_rating": 4.0,
+    "rating_scale": "/5",
+    "review_count": 1413,
+    "review_distribution": {
+      "excellent_5star": 580,
+      "good_4star": 410,
+      "average_3star": 210,
+      "poor_2star": 128,
+      "terrible_1star": 85
+    },
+    "rating_breakdown": {
+      "cleanliness": 3.8,
+      "location": 4.5,
+      "value_for_money": 3.7,
+      "staff_service": 4.0,
+      "room_quality": 3.6,
+      "comfort": 3.7
+    },
+    "complaint_analysis": {
+      "dominant_complaints": ["cleanliness", "room_quality", "noise"],
+      "staff_complaints": 3,
+      "noise_complaints": 5,
+      "room_quality_complaints": 6,
+      "value_complaints": 4,
+      "cleanliness_complaints": 7,
+      "maintenance_complaints": 4,
+      "flag": "CLEANLINESS — cockroaches reported in restaurant; sheets not changed between guests; fingerprints on mirrors and furniture; dirty bathroom floors; metal debris found in bed sheets; ROOMS — small rooms especially 'executive' category; direct views into office building across alley; thin drywall between rooms offers zero sound insulation; NOISE — machine room proximity causes noise in nearby rooms; VALUE — parking at $60/night; billing irregularities with unexpected daily charges"
+    },
+    "negative_reviews": [
+      {
+        "date": "August 2025",
+        "rating": 1,
+        "title": "Worst stay ever — cockroaches in the restaurant",
+        "full_text": "From poor and highly unprofessional attitude at the front desk to huge cockroaches in the restaurant, to dirty looking carpets in the sleeping room, to dirty and broken window treatment, to room furniture that appeared damaged by water at some point, this hotel is an absolute disaster! It needs to be shut down!",
+        "reviewer_type": "solo",
+        "primary_complaint": "cleanliness"
+      },
+      {
+        "date": "March 2026",
+        "rating": 1,
+        "title": "Found metal debris in my bed sheets",
+        "full_text": "While making myself comfortable in bed, I felt something sharp under the sheet. Pulled back the covers and found a metal piece about the size of my hand — looked like part of a broken bed frame or spring. This could have seriously injured me. Called the front desk and they sent someone up who casually removed it and said 'sorry about that.' No room change offer, no manager follow-up, no incident report. Just sorry. What if a child had been in that bed? The negligence is shocking and frankly dangerous.",
+        "reviewer_type": "couple",
+        "primary_complaint": "cleanliness"
+      },
+      {
+        "date": "February 2026",
+        "rating": 2,
+        "title": "They didn't change the sheets",
+        "full_text": "I am 100% certain the sheets were not changed before my arrival. There were visible wrinkles and impressions from the previous guest, and I found a long hair that was definitely not mine. The pillowcases had faint makeup stains. When I reported it, housekeeping came and changed the linens but the fact that I had to request clean sheets upon arrival is unacceptable. I also noticed fingerprints on the mirrors, bathroom counter, bed frame, desk, and furniture everywhere. The room had been 'cleaned' in the loosest possible sense of the word.",
+        "reviewer_type": "business",
+        "primary_complaint": "cleanliness"
+      },
+      {
+        "date": "January 2026",
+        "rating": 1,
+        "title": "Room smaller than a Holiday Inn Express",
+        "full_text": "Booked an 'executive room' expecting something at least marginally spacious. What I got was a room smaller than most Holiday Inn Express rooms I've stayed in. The king bed took up 80% of the floor space. No room for a suitcase — had to keep it on the luggage rack which blocked the closet. The desk was a tiny ledge attached to the wall. The 'view' was directly into someone's office across a narrow alley — I could read their computer screen. For $320/night, this is laughable. The word 'executive' is doing a lot of heavy lifting in that room category name.",
+        "reviewer_type": "business",
+        "primary_complaint": "room_quality"
+      },
+      {
+        "date": "December 2025",
+        "rating": 2,
+        "title": "Walls are paper thin — heard everything",
+        "full_text": "The drywall between rooms is so thin it feels like you're sharing the room with your neighbors. Heard their TV, their phone conversations, their alarm clock, and activities I'd rather not describe. When I complained to the front desk, they offered earplugs. Earplugs! At $300/night. I've stayed in budget hostels with better sound insulation. The room was also close to the mechanical/machine room and there was a constant low-frequency hum that vibrated through the floor. Between the neighbors and the machines, I got maybe 4 hours of broken sleep across two nights.",
+        "reviewer_type": "solo",
+        "primary_complaint": "noise"
+      },
+      {
+        "date": "November 2025",
+        "rating": 1,
+        "title": "Mysterious charges appearing daily on my card",
+        "full_text": "Even after booking through Booking.com, the hotel charged strange amounts from my credit card daily during my stay. First a $50 hold, then $37, then another $22. None of these matched any services I used. When I asked the front desk, they couldn't explain the charges and said their billing system 'sometimes does this.' That is not a reassuring answer when it's my money. Took 2 weeks after checkout for all the mystery charges to drop off and the correct amount to post. I shouldn't have to monitor my credit card like a hawk during a vacation.",
+        "reviewer_type": "couple",
+        "primary_complaint": "fees"
+      },
+      {
+        "date": "October 2025",
+        "rating": 2,
+        "title": "No drinking water, no basic amenities",
+        "full_text": "The room had no complimentary water bottles, no toothbrush, no slippers, no bathrobe. Things that are standard at any hotel in this price range. The coffee maker had old grounds left in it from a previous guest. The iron was missing from the closet. When I called to request water and an iron, it took 45 minutes for a single bottle to arrive. The iron never came. Finally went to the front desk to get one myself. For a 4-star hotel charging $300+/night, the lack of basic amenities is baffling.",
+        "reviewer_type": "business",
+        "primary_complaint": "room_quality"
+      },
+      {
+        "date": "September 2025",
+        "rating": 1,
+        "title": "Dirty bathroom floor and broken fixtures",
+        "full_text": "The bathroom floor was visibly dirty — dark marks and what looked like mold around the base of the toilet. The shower drain was slow, leaving me standing in 2 inches of water by the end of my shower. The faucet handle was loose and wobbled when you turned it. The toilet seat had a crack in it. I documented everything with photos and showed the front desk at checkout. They offered a 'discount on my next stay.' There will not be a next stay. A hotel should be embarrassed when basic bathroom hygiene fails.",
+        "reviewer_type": "solo",
+        "primary_complaint": "cleanliness"
+      },
+      {
+        "date": "August 2025",
+        "rating": 2,
+        "title": "Location good, parking is $60/night robbery",
+        "full_text": "The hotel's location is great — central downtown, walking distance to the White House and Metro. But the parking is valet-only at $60/night, which added $180 to our 3-night stay. There's no self-park option and street parking in that area is nearly impossible. The valet was slow — 15-20 minute waits each time. One morning they brought the wrong car first. For a 326-room boutique hotel, you'd expect more personal service. The room itself was clean but small, and the decor was trying too hard to be 'edgy boutique' while the building clearly isn't.",
+        "reviewer_type": "family",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "July 2025",
+        "rating": 1,
+        "title": "Front desk attitude was appalling",
+        "full_text": "Arrived at 3pm — standard check-in time — and was told our room wasn't ready. Fine, things happen. What wasn't fine was the front desk agent's attitude. She barely looked up from her phone, sighed audibly when I asked how long it would be, and when I mentioned I was a loyalty member she said 'that doesn't change the room being ready.' No offer to store luggage, no suggestion to wait in the restaurant, no apology. The manager was equally dismissive. I've worked in hospitality for 15 years and this level of customer service would get someone fired at my property.",
+        "reviewer_type": "business",
+        "primary_complaint": "staff"
+      }
+    ]
+  }
+}

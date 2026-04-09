@@ -1,0 +1,130 @@
+{
+  "scrape_metadata": {
+    "scrape_date": "2026-04-09",
+    "platform": "TripAdvisor",
+    "secondary_platform": "Yelp",
+    "focus": "negative_reviews_1_2_star",
+    "method": "firecrawl_scrape_cli_v1.12.2",
+    "batches_completed": ["tripadvisor_main", "tripadvisor_pagination", "yelp_page1"]
+  },
+  "property": {
+    "asset_code": "WST-DC",
+    "property_name": "The Westin Washington, D.C. City Center",
+    "keys": 410,
+    "address": "1400 M St NW, Washington, DC 20005",
+    "market": "Washington DC",
+    "asset_status": "comp",
+    "platform": "TripAdvisor",
+    "source_url": "https://www.tripadvisor.com/Hotel_Review-g28970-d120585-Reviews-The_Westin_Washington_D_C_City_Center-Washington_DC_District_of_Columbia.html",
+    "overall_rating": 4.2,
+    "rating_scale": "/5",
+    "review_count": 4285,
+    "review_distribution": {
+      "excellent_5star": 2100,
+      "good_4star": 1280,
+      "average_3star": 530,
+      "poor_2star": 240,
+      "terrible_1star": 135
+    },
+    "rating_breakdown": {
+      "cleanliness": 4.4,
+      "location": 4.6,
+      "value_for_money": 3.8,
+      "staff_service": 4.3,
+      "room_quality": 4.0,
+      "comfort": 4.1
+    },
+    "complaint_analysis": {
+      "dominant_complaints": ["value", "room_quality", "maintenance"],
+      "staff_complaints": 3,
+      "noise_complaints": 3,
+      "room_quality_complaints": 5,
+      "value_complaints": 6,
+      "cleanliness_complaints": 3,
+      "maintenance_complaints": 5,
+      "flag": "VALUE — high pricing relative to room quality; rooms need facelift despite Travelers' Choice award; ROOMS — atrium-facing rooms lack views and natural light; electrical outlet placement poor (no bedside charging); MAINTENANCE — power outlets tied to light switches causing device shutoffs; some rooms have dated furnishings despite common area updates"
+    },
+    "negative_reviews": [
+      {
+        "date": "March 2026",
+        "rating": 1,
+        "title": "Flooded room and zero accountability",
+        "full_text": "Shower failure caused our entire bathroom to flood, with water seeping into the bedroom carpet. Called front desk immediately — took 2 hours for maintenance to arrive. They brought a single towel. Had to be moved to a different room at 11pm with a toddler. The replacement room smelled like cigarettes. Next morning asked to speak with a manager and was told none were available until Monday. No apology letter, no points, nothing. For a 'Travelers Choice' hotel, the crisis management is nonexistent.",
+        "reviewer_type": "family",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "February 2026",
+        "rating": 2,
+        "title": "Atrium room is a scam — no view, no light",
+        "full_text": "Booked what I thought would be a nice city view room and instead got an interior atrium-facing room. The 'view' was of the hotel's own interior courtyard — essentially a concrete shaft. Zero natural light during the day. When I asked to switch, I was told all exterior rooms were booked and they could 'upgrade' me to a higher floor atrium room. That's not an upgrade. The Westin brand usually means something but this layout is a fundamental design flaw they're profiting from by not disclosing it during booking.",
+        "reviewer_type": "couple",
+        "primary_complaint": "room_quality"
+      },
+      {
+        "date": "January 2026",
+        "rating": 2,
+        "title": "Outlets turn off with the lights",
+        "full_text": "Fair warning: in several rooms the electrical outlets are wired to the light switches. When you turn off the bedside lamp to sleep, your phone stops charging. I discovered this at 3am when my alarm didn't go off because my phone was dead. No outlets anywhere near the bed that stay on. Had to charge my phone in the bathroom overnight. For a hotel that caters to business travelers, this is an embarrassing design flaw. Mentioned it to engineering and was told 'we know about it but it's a building wiring issue.' So fix it.",
+        "reviewer_type": "business",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "December 2025",
+        "rating": 1,
+        "title": "Billing nightmare — overcharged by $460",
+        "full_text": "Checked out on Sunday and noticed an extra $460 charge on my card. Called the hotel and was told it was for parking — but I never used their parking. Took 5 phone calls over 2 weeks to get a refund. Each time I called I had to re-explain the situation from scratch because apparently no one documents anything. The final call, the manager admitted it was 'a system error that happens sometimes.' Sometimes?! That's not reassuring. If I hadn't caught it, they'd have kept my money. Check your bill line by line.",
+        "reviewer_type": "business",
+        "primary_complaint": "fees"
+      },
+      {
+        "date": "November 2025",
+        "rating": 2,
+        "title": "Rooms desperately need renovation",
+        "full_text": "The lobby and common areas are beautiful — clearly recently updated. But the rooms are a completely different story. Carpet is worn and stained in places, the desk chair wobbles, bathroom fixtures are dated, and the wallpaper is peeling near the window. The bed was comfortable (classic Westin Heavenly Bed) but everything surrounding it screams 'we spent the renovation budget on the lobby.' For $380/night, I expect the room to match the marketing photos.",
+        "reviewer_type": "solo",
+        "primary_complaint": "room_quality"
+      },
+      {
+        "date": "October 2025",
+        "rating": 1,
+        "title": "AC broken, couldn't sleep in 80-degree room",
+        "full_text": "Checked in to find the AC not working. Room was 80+ degrees. Called engineering — they came, poked at the unit, said it was 'working' even though it clearly wasn't producing cold air. Requested a room change and was told the hotel was full. Spent the night with the window cracked open to street noise. Next morning the manager offered 'Bonvoy points' as compensation. Points don't fix a sleepless night before an important client meeting. I'm a Platinum member staying 40+ nights a year at Marriott properties. This was unacceptable.",
+        "reviewer_type": "business",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "September 2025",
+        "rating": 2,
+        "title": "Restaurant overpriced, staff inattentive",
+        "full_text": "The hotel restaurant is absurdly overpriced even by DC standards. $28 for scrambled eggs and toast. The server forgot our coffee order twice and brought the wrong entrée to our table. Waited 15 minutes to get the check. The breakfast buffet is $42 per person and the quality is comparable to a Courtyard by Marriott. Plenty of great restaurants within walking distance — save your money and leave the hotel to eat.",
+        "reviewer_type": "couple",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "August 2025",
+        "rating": 2,
+        "title": "M Street noise is brutal",
+        "full_text": "Our room faced M Street and the noise was relentless. Sirens, honking, late-night bar crowds — it never stopped. The windows are clearly not soundproofed. Asked for earplugs at the front desk and they didn't have any. Next time I'd specifically request a courtyard-facing room, though apparently those have their own issues with no natural light. Feels like there's no winning room assignment at this property.",
+        "reviewer_type": "couple",
+        "primary_complaint": "noise"
+      },
+      {
+        "date": "July 2025",
+        "rating": 1,
+        "title": "Checked in to an uncleaned room",
+        "full_text": "Opened the door to find an unmade bed, used towels on the floor, and a half-eaten room service tray on the desk. Clearly the previous guest's mess. Called the front desk and they apologized profusely but it took another 30 minutes to get reassigned. The new room was clean but the whole experience left a bad taste. A hotel ranked #7 in DC should have basic housekeeping coordination figured out.",
+        "reviewer_type": "solo",
+        "primary_complaint": "cleanliness"
+      },
+      {
+        "date": "June 2025",
+        "rating": 2,
+        "title": "Heavenly Bed, everything else is earthly",
+        "full_text": "I'll give credit where it's due — the Westin Heavenly Bed lives up to the hype. It's genuinely one of the most comfortable hotel beds I've slept in. But that's where the positives end. The room was showing its age with scuffed walls and a musty smell from the HVAC. The gym was tiny and had one broken treadmill. Parking was $55/night. The destination fee added another $25/day. By the time you factor in all the extras, you're paying Four Seasons prices for a 3.5-star experience.",
+        "reviewer_type": "business",
+        "primary_complaint": "value"
+      }
+    ]
+  }
+}

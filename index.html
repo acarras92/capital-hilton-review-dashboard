@@ -10,13 +10,23 @@
     --text: #e4e6f0; --text-muted: #8b8fa3; --accent: #6366f1;
     --green: #22c55e; --yellow: #eab308; --orange: #f97316; --red: #ef4444;
     --blue: #3b82f6; --purple: #a855f7; --cyan: #06b6d4;
+    --navy: #1e3a5f;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
   .container { max-width: 1400px; margin: 0 auto; padding: 24px; }
-  header { margin-bottom: 32px; }
+  header { margin-bottom: 16px; }
   header h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
   header p { color: var(--text-muted); font-size: 14px; }
+
+  /* Tab Navigation */
+  .tab-nav { display: flex; gap: 0; margin-bottom: 32px; border-bottom: 2px solid var(--border); }
+  .tab-btn { padding: 12px 28px; border: none; background: none; color: var(--text-muted); font-size: 14px; font-weight: 600; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.2s; letter-spacing: 0.02em; }
+  .tab-btn:hover { color: var(--text); }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
   .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 32px; }
   .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
   .kpi-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 4px; }
@@ -64,7 +74,7 @@
   .review-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; transition: border-color 0.2s; }
   .review-card:hover { border-color: var(--accent); }
   .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
-  .review-meta { display: flex; gap: 8px; align-items: center; }
+  .review-meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .review-stars { font-size: 14px; }
   .review-date { font-size: 11px; color: var(--text-muted); }
   .review-type { font-size: 10px; padding: 2px 6px; border-radius: 4px; background: var(--surface2); color: var(--text-muted); text-transform: uppercase; }
@@ -75,6 +85,64 @@
   .review-toggle:hover { text-decoration: underline; }
   .complaint-tag { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; text-transform: uppercase; }
 
+  /* Comp Set Styles */
+  .comp-table-wrap { overflow-x: auto; margin-bottom: 32px; }
+  .comp-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .comp-table th { padding: 10px 12px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); border-bottom: 2px solid var(--border); cursor: pointer; user-select: none; white-space: nowrap; }
+  .comp-table th:hover { color: var(--accent); }
+  .comp-table th .sort-arrow { font-size: 10px; margin-left: 4px; }
+  .comp-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  .comp-table tr:hover { background: var(--surface2); }
+  .comp-table tr.cap-row { background: rgba(99,102,241,0.08); border-left: 3px solid var(--accent); font-weight: 600; }
+  .comp-table tr.cap-row:hover { background: rgba(99,102,241,0.14); }
+  .rating-pill { display: inline-block; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 12px; }
+
+  /* Comparative bar chart */
+  .comp-chart-grid { display: grid; grid-template-columns: 100px 1fr; gap: 4px 8px; align-items: center; margin-bottom: 8px; }
+  .comp-chart-label { font-size: 12px; color: var(--text-muted); text-align: right; }
+  .comp-chart-bars { display: flex; gap: 2px; align-items: center; height: 20px; }
+  .comp-chart-bar { height: 14px; border-radius: 3px; transition: width 0.6s ease; position: relative; }
+  .comp-chart-bar.cap-bar { height: 18px; border-radius: 4px; }
+  .comp-legend { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+  .comp-legend-item { display: flex; align-items: center; gap: 4px; font-size: 11px; color: var(--text-muted); }
+  .comp-legend-dot { width: 10px; height: 10px; border-radius: 3px; }
+
+  /* Heatmap */
+  .heatmap-wrap { overflow-x: auto; }
+  .heatmap { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .heatmap th { padding: 8px; text-align: center; font-size: 10px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.03em; }
+  .heatmap th:first-child { text-align: left; }
+  .heatmap td { padding: 8px; text-align: center; border: 1px solid var(--bg); border-radius: 4px; font-weight: 600; font-size: 11px; }
+  .heatmap td:first-child { text-align: left; font-weight: 500; color: var(--text-muted); border: none; white-space: nowrap; }
+  .heatmap tr.cap-heatrow td:first-child { color: var(--accent); font-weight: 700; }
+
+  /* Intel panel */
+  .intel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+  @media (max-width: 768px) { .intel-grid { grid-template-columns: 1fr; } }
+  .intel-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .intel-card h3 { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .intel-list { list-style: none; padding: 0; }
+  .intel-list li { font-size: 12px; color: var(--text-muted); line-height: 1.6; padding: 6px 0; border-bottom: 1px solid var(--border); }
+  .intel-list li:last-child { border-bottom: none; }
+  .intel-list li strong { color: var(--text); }
+
+  /* Expandable hotel cards */
+  .hotel-expand { margin-bottom: 8px; }
+  .hotel-expand-header { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: all 0.2s; }
+  .hotel-expand-header:hover { border-color: var(--accent); }
+  .hotel-expand-header h4 { font-size: 14px; font-weight: 600; }
+  .hotel-expand-header .expand-meta { display: flex; gap: 16px; align-items: center; font-size: 12px; color: var(--text-muted); }
+  .hotel-expand-arrow { font-size: 12px; color: var(--text-muted); transition: transform 0.2s; }
+  .hotel-expand.open .hotel-expand-arrow { transform: rotate(180deg); }
+  .hotel-expand-body { display: none; background: var(--surface); border: 1px solid var(--border); border-top: none; border-radius: 0 0 10px 10px; padding: 20px; margin-top: -8px; }
+  .hotel-expand.open .hotel-expand-body { display: block; }
+  .hotel-expand.open .hotel-expand-header { border-radius: 10px 10px 0 0; }
+  .hotel-kpi-row { display: flex; gap: 24px; margin-bottom: 16px; flex-wrap: wrap; }
+  .hotel-kpi { text-align: center; }
+  .hotel-kpi-val { font-size: 22px; font-weight: 700; }
+  .hotel-kpi-lbl { font-size: 11px; color: var(--text-muted); text-transform: uppercase; }
+  .mini-bar-chart { display: flex; gap: 4px; align-items: end; height: 60px; margin-bottom: 16px; }
+
   footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 12px; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
@@ -84,38 +152,72 @@
 <div class="container">
   <header>
     <h1>Capital Hilton &mdash; Review Intelligence</h1>
-    <p>TripAdvisor + Yelp negative review analysis | 544 keys | Scraped 2026-04-08 | <strong>CONFIDENTIAL &mdash; Highgate Internal</strong></p>
+    <p>TripAdvisor + Yelp negative review analysis | Washington DC Comp Set | Scraped 2026-04-08 | <strong>CONFIDENTIAL &mdash; Highgate Internal</strong></p>
   </header>
 
-  <div class="kpi-row" id="kpis"></div>
-
-  <div class="flag-box" id="flag-box"></div>
-
-  <div class="grid-2">
-    <div class="card" id="breakdown-card">
-      <h3>Rating Breakdown</h3>
-      <div id="breakdown-bars"></div>
-    </div>
-    <div class="card">
-      <h3>Review Distribution</h3>
-      <div id="dist-bars"></div>
-    </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" data-tab="capital">Capital Hilton</button>
+    <button class="tab-btn" data-tab="compset">Comp Set</button>
   </div>
 
-  <div class="grid-2">
-    <div class="card">
-      <h3>Complaint Categories (from scraped negatives)</h3>
-      <div class="complaint-chart" id="complaint-chart"></div>
+  <!-- ===== CAPITAL HILTON TAB ===== -->
+  <div class="tab-content active" id="tab-capital">
+    <div class="kpi-row" id="kpis"></div>
+    <div class="flag-box" id="flag-box"></div>
+    <div class="grid-2">
+      <div class="card" id="breakdown-card">
+        <h3>Rating Breakdown</h3>
+        <div id="breakdown-bars"></div>
+      </div>
+      <div class="card">
+        <h3>Review Distribution</h3>
+        <div id="dist-bars"></div>
+      </div>
     </div>
-    <div class="card">
-      <h3>Reviewer Type Mix</h3>
-      <div class="complaint-chart" id="type-chart"></div>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Complaint Categories (from scraped negatives)</h3>
+        <div class="complaint-chart" id="complaint-chart"></div>
+      </div>
+      <div class="card">
+        <h3>Reviewer Type Mix</h3>
+        <div class="complaint-chart" id="type-chart"></div>
+      </div>
     </div>
+    <div class="section-title">Negative Reviews (1-2 Star)</div>
+    <div class="filters" id="filters"></div>
+    <div class="review-grid" id="reviews"></div>
   </div>
 
-  <div class="section-title">Negative Reviews (1-2 Star)</div>
-  <div class="filters" id="filters"></div>
-  <div class="review-grid" id="reviews"></div>
+  <!-- ===== COMP SET TAB ===== -->
+  <div class="tab-content" id="tab-compset">
+    <div class="kpi-row" id="comp-kpis"></div>
+
+    <div class="section-title">Comp Set Summary</div>
+    <div class="comp-table-wrap">
+      <table class="comp-table" id="comp-table">
+        <thead><tr id="comp-thead"></tr></thead>
+        <tbody id="comp-tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Comparative Rating Breakdown</h3>
+        <div id="comp-rating-chart"></div>
+      </div>
+      <div class="card">
+        <h3>Complaint Category Heatmap</h3>
+        <div class="heatmap-wrap" id="comp-heatmap"></div>
+      </div>
+    </div>
+
+    <div class="section-title">Competitive Intelligence</div>
+    <div class="intel-grid" id="intel-grid"></div>
+
+    <div class="section-title" style="margin-top:16px">Individual Hotel Detail</div>
+    <div id="hotel-expanders"></div>
+  </div>
 
   <footer>
     <p>Data source: TripAdvisor &amp; Yelp (scraped via Firecrawl CLI v1.12.2). Focus: 1-2 star reviews.</p>
@@ -124,6 +226,7 @@
 </div>
 
 <script>
+/* ====== SHARED CONSTANTS ====== */
 const COLORS = {
   staff: '#ef4444', cleanliness: '#3b82f6', value: '#a855f7', maintenance: '#06b6d4',
   room_quality: '#eab308', noise: '#f97316', fees: '#22c55e'
@@ -135,7 +238,29 @@ const LABELS = {
 const TYPE_COLORS = {
   business: '#6366f1', solo: '#3b82f6', couple: '#a855f7', family: '#22c55e', other: '#8b8fa3'
 };
+const HOTEL_COLORS = [
+  '#6366f1', '#8b8fa3', '#8b8fa3', '#8b8fa3', '#8b8fa3', '#8b8fa3', '#8b8fa3'
+];
+const COMP_FILES = [
+  'hyatt_regency_capitol_reviews_raw.json',
+  'westin_dc_city_center_reviews_raw.json',
+  'jw_marriott_dc_reviews_raw.json',
+  'mayflower_hotel_reviews_raw.json',
+  'le_meridien_dc_reviews_raw.json',
+  'hamilton_hotel_dc_reviews_raw.json'
+];
 
+/* ====== TAB SWITCHING ====== */
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+/* ====== CAPITAL HILTON TAB (unchanged logic) ====== */
 fetch('data.json').then(r => r.json()).then(data => {
   const p = data.property;
   const reviews = data.reviews;
@@ -256,12 +381,12 @@ function renderFilters(reviews) {
     html += `<button class="filter-btn" data-filter="${c}">${LABELS[c] || c} (${count})</button>`;
   });
   document.getElementById('filters').innerHTML = html;
-  document.querySelectorAll('.filter-btn').forEach(btn => {
+  document.querySelectorAll('#tab-capital .filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('#tab-capital .filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const f = btn.dataset.filter;
-      document.querySelectorAll('.review-card').forEach(card => {
+      document.querySelectorAll('#tab-capital .review-card').forEach(card => {
         card.style.display = (f === 'all' || card.dataset.complaint === f) ? '' : 'none';
       });
     });
@@ -303,6 +428,326 @@ function rc(v) {
   if (v >= 4.2) return '#eab308';
   if (v >= 4.0) return '#f97316';
   return '#ef4444';
+}
+
+/* ====== COMP SET TAB ====== */
+fetch('comp_set_review_comparison.json').then(r => r.json()).then(compData => {
+  const hotels = compData.comp_set_summary;
+  const intel = compData.competitive_intel;
+
+  // Also load the individual raw files for expandable cards
+  const rawFileMap = {
+    'CAP-HIL': 'capital_hilton_reviews_raw.json',
+    'HYA-CAP': 'hyatt_regency_capitol_reviews_raw.json',
+    'WST-DC': 'westin_dc_city_center_reviews_raw.json',
+    'JWM-DC': 'jw_marriott_dc_reviews_raw.json',
+    'MAY-DC': 'mayflower_hotel_reviews_raw.json',
+    'LMD-DC': 'le_meridien_dc_reviews_raw.json',
+    'HAM-DC': 'hamilton_hotel_dc_reviews_raw.json'
+  };
+
+  const rawPromises = {};
+  Object.entries(rawFileMap).forEach(([code, file]) => {
+    rawPromises[code] = fetch(file).then(r => r.json()).catch(() => null);
+  });
+
+  Promise.all(Object.values(rawPromises)).then(results => {
+    const rawData = {};
+    const codes = Object.keys(rawFileMap);
+    codes.forEach((code, i) => { rawData[code] = results[i]; });
+
+    renderCompKPIs(hotels, intel);
+    renderCompTable(hotels);
+    renderCompRatingChart(hotels);
+    renderCompHeatmap(hotels);
+    renderIntelPanel(intel);
+    renderHotelExpanders(hotels, rawData);
+  });
+});
+
+function renderCompKPIs(hotels, intel) {
+  const cap = hotels.find(h => h.asset_code === 'CAP-HIL');
+  const avgRating = intel.comp_set_average_rating;
+  const avgNeg = intel.comp_set_average_negative_pct;
+  const totalReviews = hotels.reduce((s, h) => s + h.review_count, 0);
+  document.getElementById('comp-kpis').innerHTML = `
+    <div class="kpi"><div class="kpi-label">Comp Set Avg Rating</div><div class="kpi-value" style="color:${rc(avgRating)}">${avgRating.toFixed(2)}</div><div class="kpi-sub">across 7 hotels</div></div>
+    <div class="kpi"><div class="kpi-label">Capital Hilton</div><div class="kpi-value" style="color:${rc(cap.overall_rating)}">${cap.overall_rating}</div><div class="kpi-sub">${cap.overall_rating >= avgRating ? 'At or above' : 'Below'} comp set avg</div></div>
+    <div class="kpi"><div class="kpi-label">Highest Rated</div><div class="kpi-value" style="color:var(--green)">${intel.highest_rated_score}</div><div class="kpi-sub">${intel.highest_rated.split(',')[0]}</div></div>
+    <div class="kpi"><div class="kpi-label">Lowest Rated</div><div class="kpi-value" style="color:var(--red)">${intel.lowest_rated_score}</div><div class="kpi-sub">${intel.lowest_rated.split(',')[0]}</div></div>
+    <div class="kpi"><div class="kpi-label">Total Reviews</div><div class="kpi-value">${totalReviews.toLocaleString()}</div><div class="kpi-sub">7 hotels combined</div></div>
+    <div class="kpi"><div class="kpi-label">Avg Negative %</div><div class="kpi-value" style="color:var(--orange)">${avgNeg.toFixed(1)}%</div><div class="kpi-sub">1-2 star reviews</div></div>
+  `;
+}
+
+function renderCompTable(hotels) {
+  const cols = [
+    { key: 'hotel', label: 'Hotel' },
+    { key: 'keys', label: 'Keys' },
+    { key: 'overall_rating', label: 'Rating' },
+    { key: 'review_count', label: 'Reviews' },
+    { key: 'negative_pct', label: 'Neg %' },
+    { key: 'top_complaint', label: 'Top Complaint' },
+    { key: 'flag_short', label: 'Flag' }
+  ];
+
+  // Precompute top complaint
+  const rows = hotels.map(h => {
+    const top = Object.entries(h.complaint_counts).sort((a, b) => b[1] - a[1])[0];
+    return { ...h, top_complaint: LABELS[top[0]] || top[0], flag_short: h.flag.split(';')[0].substring(0, 80) + '...' };
+  });
+
+  let thHtml = '';
+  cols.forEach(c => {
+    thHtml += `<th data-sort="${c.key}">${c.label} <span class="sort-arrow"></span></th>`;
+  });
+  document.getElementById('comp-thead').innerHTML = thHtml;
+
+  function renderRows(data) {
+    let html = '';
+    data.forEach(h => {
+      const isCap = h.asset_code === 'CAP-HIL';
+      const ratingColor = h.overall_rating >= 4.2 ? 'var(--green)' : h.overall_rating >= 3.8 ? 'var(--yellow)' : 'var(--red)';
+      html += `<tr class="${isCap ? 'cap-row' : ''}">
+        <td>${h.hotel}</td>
+        <td>${h.keys}</td>
+        <td><span class="rating-pill" style="background:${ratingColor}22;color:${ratingColor}">${h.overall_rating}</span></td>
+        <td>${h.review_count.toLocaleString()}</td>
+        <td>${h.negative_pct.toFixed(1)}%</td>
+        <td>${h.top_complaint}</td>
+        <td style="font-size:11px;color:var(--text-muted);white-space:normal;max-width:300px">${h.flag_short}</td>
+      </tr>`;
+    });
+    document.getElementById('comp-tbody').innerHTML = html;
+  }
+
+  renderRows(rows);
+
+  // Sortable headers
+  let sortCol = null, sortAsc = true;
+  document.querySelectorAll('#comp-table th').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.sort;
+      if (sortCol === key) { sortAsc = !sortAsc; } else { sortCol = key; sortAsc = true; }
+      rows.sort((a, b) => {
+        let va = a[key], vb = b[key];
+        if (typeof va === 'string') { va = va.toLowerCase(); vb = vb.toLowerCase(); }
+        if (va < vb) return sortAsc ? -1 : 1;
+        if (va > vb) return sortAsc ? 1 : -1;
+        return 0;
+      });
+      renderRows(rows);
+      document.querySelectorAll('#comp-table th .sort-arrow').forEach(s => s.textContent = '');
+      th.querySelector('.sort-arrow').textContent = sortAsc ? ' ▲' : ' ▼';
+    });
+  });
+}
+
+function renderCompRatingChart(hotels) {
+  const dims = ['cleanliness', 'location', 'value_for_money', 'staff_service', 'room_quality', 'comfort'];
+  const dimLabels = ['Cleanliness', 'Location', 'Value', 'Staff/Service', 'Room Quality', 'Comfort'];
+  const hotelColors = {};
+  hotels.forEach(h => {
+    hotelColors[h.asset_code] = h.asset_code === 'CAP-HIL' ? '#6366f1' : '#4b5068';
+  });
+
+  let html = '';
+  dims.forEach((dim, di) => {
+    html += `<div style="margin-bottom:12px">`;
+    html += `<div style="font-size:12px;color:var(--text-muted);margin-bottom:4px;font-weight:600">${dimLabels[di]}</div>`;
+    html += `<div style="display:flex;flex-direction:column;gap:3px">`;
+    // Sort hotels by this dimension's rating, descending
+    const sorted = [...hotels].sort((a, b) => b.rating_breakdown[dim] - a.rating_breakdown[dim]);
+    sorted.forEach(h => {
+      const val = h.rating_breakdown[dim];
+      const pct = ((val - 1) / 4) * 100;
+      const isCap = h.asset_code === 'CAP-HIL';
+      const color = isCap ? '#6366f1' : '#4b5068';
+      const shortName = h.hotel.length > 20 ? h.hotel.substring(0, 18) + '...' : h.hotel;
+      html += `<div style="display:flex;align-items:center;gap:6px">
+        <div style="width:140px;font-size:10px;text-align:right;color:${isCap ? 'var(--accent)' : 'var(--text-muted)'};font-weight:${isCap?700:400};flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${shortName}</div>
+        <div class="bar-track" style="height:${isCap?12:8}px"><div class="bar-fill ${isCap?'cap-bar':''}" style="width:${pct}%;background:${color}"></div></div>
+        <div style="font-size:11px;font-weight:700;width:28px;color:${rc(val)}">${val}</div>
+      </div>`;
+    });
+    html += `</div></div>`;
+  });
+
+  html += `<div class="comp-legend">
+    <div class="comp-legend-item"><div class="comp-legend-dot" style="background:#6366f1"></div> Capital Hilton</div>
+    <div class="comp-legend-item"><div class="comp-legend-dot" style="background:#4b5068"></div> Comp Set</div>
+  </div>`;
+
+  document.getElementById('comp-rating-chart').innerHTML = html;
+}
+
+function renderCompHeatmap(hotels) {
+  const cats = ['staff', 'cleanliness', 'value', 'maintenance', 'room_quality', 'noise', 'fees'];
+  const catLabels = ['Staff', 'Clean', 'Value', 'Maint', 'Room', 'Noise', 'Fees'];
+
+  // Find global max for color scaling
+  let globalMax = 0;
+  hotels.forEach(h => {
+    cats.forEach(c => {
+      const v = h.complaint_counts[c] || 0;
+      if (v > globalMax) globalMax = v;
+    });
+  });
+
+  let html = '<table class="heatmap"><thead><tr><th>Hotel</th>';
+  catLabels.forEach(l => { html += `<th>${l}</th>`; });
+  html += '</tr></thead><tbody>';
+
+  hotels.forEach(h => {
+    const isCap = h.asset_code === 'CAP-HIL';
+    html += `<tr class="${isCap ? 'cap-heatrow' : ''}">`;
+    const shortName = h.hotel.length > 25 ? h.hotel.substring(0, 23) + '...' : h.hotel;
+    html += `<td>${shortName}</td>`;
+    cats.forEach(c => {
+      const v = h.complaint_counts[c] || 0;
+      const intensity = globalMax > 0 ? v / globalMax : 0;
+      const r = Math.round(30 + intensity * 200);
+      const g = Math.round(20 + (1 - intensity) * 10);
+      const b = Math.round(20 + (1 - intensity) * 10);
+      const bg = v > 0 ? `rgba(239,68,68,${0.1 + intensity * 0.7})` : 'var(--surface2)';
+      const textColor = intensity > 0.5 ? '#fff' : 'var(--text-muted)';
+      html += `<td style="background:${bg};color:${textColor}">${v}</td>`;
+    });
+    html += '</tr>';
+  });
+
+  html += '</tbody></table>';
+  document.getElementById('comp-heatmap').innerHTML = html;
+}
+
+function renderIntelPanel(intel) {
+  let html = '';
+
+  // Benchmarks
+  html += `<div class="intel-card">
+    <h3>Comp Set Benchmarks</h3>
+    <ul class="intel-list">
+      <li><strong>Highest Rated:</strong> ${intel.highest_rated} (${intel.highest_rated_score})</li>
+      <li><strong>Lowest Rated:</strong> ${intel.lowest_rated} (${intel.lowest_rated_score})</li>
+      <li><strong>Comp Set Average:</strong> ${intel.comp_set_average_rating.toFixed(2)} overall rating</li>
+      <li><strong>Avg Negative %:</strong> ${intel.comp_set_average_negative_pct.toFixed(1)}% of reviews are 1-2 star</li>
+    </ul>
+  </div>`;
+
+  // Shared Weaknesses
+  html += `<div class="intel-card">
+    <h3>Shared Weaknesses (3+ Hotels)</h3>
+    <ul class="intel-list">`;
+  intel.shared_complaint_themes.forEach(t => {
+    const parts = t.split(' — ');
+    html += `<li><strong>${parts[0]}</strong>${parts.length > 1 ? ' — ' + parts[1] : ''}</li>`;
+  });
+  html += `</ul></div>`;
+
+  // Capital Hilton Unique Risks
+  html += `<div class="intel-card">
+    <h3><span class="badge badge-risk">RISK</span> Capital Hilton Unique Risks</h3>
+    <ul class="intel-list">`;
+  intel.capital_hilton_unique_risks.forEach(r => {
+    const parts = r.split(' — ');
+    html += `<li><strong>${parts[0]}</strong>${parts.length > 1 ? ' — ' + parts[1] : ''}</li>`;
+  });
+  html += `</ul></div>`;
+
+  // Capital Hilton Relative Strengths
+  html += `<div class="intel-card">
+    <h3><span class="badge badge-adequate">STRENGTH</span> Capital Hilton Relative Strengths</h3>
+    <ul class="intel-list">`;
+  intel.capital_hilton_relative_strengths.forEach(s => {
+    html += `<li>${s}</li>`;
+  });
+  html += `</ul></div>`;
+
+  document.getElementById('intel-grid').innerHTML = html;
+}
+
+function renderHotelExpanders(hotels, rawData) {
+  // Skip Capital Hilton — it has its own tab
+  const compHotels = hotels.filter(h => h.asset_code !== 'CAP-HIL');
+  let html = '';
+
+  compHotels.forEach((h, idx) => {
+    const raw = rawData[h.asset_code];
+    const negReviews = raw ? raw.property.negative_reviews.slice(0, 5) : [];
+    const topComplaints = Object.entries(h.complaint_counts).sort((a, b) => b[1] - a[1]).slice(0, 3);
+    const maxComplaint = topComplaints[0] ? topComplaints[0][1] : 1;
+
+    html += `<div class="hotel-expand" id="expand-${idx}">
+      <div class="hotel-expand-header" onclick="document.getElementById('expand-${idx}').classList.toggle('open')">
+        <h4>${h.hotel}</h4>
+        <div class="expand-meta">
+          <span><span class="rating-pill" style="background:${rc(h.overall_rating)}22;color:${rc(h.overall_rating)}">${h.overall_rating}</span></span>
+          <span>${h.keys} keys</span>
+          <span>${h.review_count.toLocaleString()} reviews</span>
+          <span class="hotel-expand-arrow">▼</span>
+        </div>
+      </div>
+      <div class="hotel-expand-body">
+        <div class="hotel-kpi-row">
+          <div class="hotel-kpi"><div class="hotel-kpi-val" style="color:${rc(h.overall_rating)}">${h.overall_rating}</div><div class="hotel-kpi-lbl">Rating</div></div>
+          <div class="hotel-kpi"><div class="hotel-kpi-val">${h.review_count.toLocaleString()}</div><div class="hotel-kpi-lbl">Reviews</div></div>
+          <div class="hotel-kpi"><div class="hotel-kpi-val" style="color:var(--red)">${h.negative_pct.toFixed(1)}%</div><div class="hotel-kpi-lbl">Negative</div></div>
+          <div class="hotel-kpi"><div class="hotel-kpi-val">${h.keys}</div><div class="hotel-kpi-lbl">Keys</div></div>
+        </div>
+
+        <h3 style="font-size:12px;color:var(--text-muted);text-transform:uppercase;margin-bottom:8px;letter-spacing:0.04em">Top 3 Complaint Categories</h3>
+        <div class="mini-bar-chart">`;
+
+    topComplaints.forEach(([key, count]) => {
+      const hPx = (count / maxComplaint) * 50;
+      const color = COLORS[key] || '#8b8fa3';
+      html += `<div class="complaint-col">
+        <div class="complaint-bar-count" style="color:${color}">${count}</div>
+        <div class="complaint-bar-v" style="height:${hPx}px;background:${color}"></div>
+        <div class="complaint-bar-label">${LABELS[key] || key}</div>
+      </div>`;
+    });
+
+    html += `</div>
+
+        <div class="flag-box" style="margin-bottom:16px">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+            <span class="badge badge-watch">FLAG</span>
+            <span style="font-weight:600;font-size:13px">Intelligence Summary</span>
+          </div>
+          <p>${h.flag}</p>
+        </div>`;
+
+    // Negative reviews
+    if (negReviews.length > 0) {
+      html += `<h3 style="font-size:12px;color:var(--text-muted);text-transform:uppercase;margin-bottom:8px;letter-spacing:0.04em">Representative Negative Reviews</h3>
+      <div class="review-grid">`;
+      negReviews.forEach((r, ri) => {
+        const stars = r.rating === 1 ? '&#9733;' : '&#9733;&#9733;';
+        const starColor = r.rating === 1 ? 'var(--red)' : 'var(--orange)';
+        const tagColor = COLORS[r.primary_complaint] || '#8b8fa3';
+        const uid = `comp-rt-${idx}-${ri}`;
+        html += `<div class="review-card">
+          <div class="review-header">
+            <div class="review-meta">
+              <span class="review-stars" style="color:${starColor}">${stars}</span>
+              <span class="review-date">${r.date}</span>
+              <span class="review-type">${r.reviewer_type}</span>
+              <span class="complaint-tag" style="background:${tagColor}22;color:${tagColor}">${LABELS[r.primary_complaint] || r.primary_complaint}</span>
+            </div>
+          </div>
+          <div class="review-title">${r.title}</div>
+          <div class="review-text" id="${uid}">${r.full_text}</div>
+          <button class="review-toggle" onclick="var el=document.getElementById('${uid}');el.classList.toggle('expanded');this.textContent=el.classList.contains('expanded')?'Show less':'Show more'">Show more</button>
+        </div>`;
+      });
+      html += `</div>`;
+    }
+
+    html += `</div></div>`;
+  });
+
+  document.getElementById('hotel-expanders').innerHTML = html;
 }
 </script>
 </body>

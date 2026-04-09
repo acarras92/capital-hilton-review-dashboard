@@ -1,0 +1,138 @@
+{
+  "scrape_metadata": {
+    "scrape_date": "2026-04-09",
+    "platform": "TripAdvisor",
+    "secondary_platform": "Yelp",
+    "focus": "negative_reviews_1_2_star",
+    "method": "firecrawl_scrape_cli_v1.12.2",
+    "batches_completed": ["tripadvisor_main", "tripadvisor_pagination", "yelp_page1"]
+  },
+  "property": {
+    "asset_code": "JWM-DC",
+    "property_name": "JW Marriott Washington, DC",
+    "keys": 777,
+    "address": "1331 Pennsylvania Ave NW, Washington, DC 20004",
+    "market": "Washington DC",
+    "asset_status": "comp",
+    "platform": "TripAdvisor",
+    "source_url": "https://www.tripadvisor.com/Hotel_Review-g28970-d84079-Reviews-JW_Marriott_Washington_DC-Washington_DC_District_of_Columbia.html",
+    "overall_rating": 4.0,
+    "rating_scale": "/5",
+    "review_count": 3872,
+    "review_distribution": {
+      "excellent_5star": 1580,
+      "good_4star": 1050,
+      "average_3star": 620,
+      "poor_2star": 380,
+      "terrible_1star": 242
+    },
+    "rating_breakdown": {
+      "cleanliness": 4.1,
+      "location": 4.7,
+      "value_for_money": 3.4,
+      "staff_service": 3.9,
+      "room_quality": 3.6,
+      "comfort": 3.7
+    },
+    "complaint_analysis": {
+      "dominant_complaints": ["room_quality", "value", "noise"],
+      "staff_complaints": 4,
+      "noise_complaints": 6,
+      "room_quality_complaints": 8,
+      "value_complaints": 7,
+      "cleanliness_complaints": 3,
+      "maintenance_complaints": 5,
+      "flag": "ROOMS — consistently described as dated, small, and not befitting JW Marriott brand; fixtures rusting, ceiling tiles falling, furniture worn; NOISE — paper-thin walls between rooms; guests report hearing conversations in adjacent rooms; elevator system notoriously slow with 20-30 min waits; VALUE — valet-only parking at $69/night; high room rates vs. mediocre product; food quality underwhelming for price point"
+    },
+    "negative_reviews": [
+      {
+        "date": "March 2026",
+        "rating": 1,
+        "title": "Not impressed — JW brand means nothing here",
+        "full_text": "I stay at JW Marriott properties around the world and this one is an embarrassment to the brand. The room was tiny — maybe 280 sq ft for a 'deluxe king.' The furniture looked like it was from 2005. The desk was scuffed, the chair was wobbly, and the bathroom had rusting fixtures around the sink. Ceiling tiles in the hallway were sagging. For $450/night, this is completely unacceptable. The JW brand is supposed to mean luxury — this is a Courtyard with a fancy lobby. Marriott corporate should be ashamed.",
+        "reviewer_type": "business",
+        "primary_complaint": "room_quality"
+      },
+      {
+        "date": "February 2026",
+        "rating": 1,
+        "title": "Can hear my neighbors breathing through the walls",
+        "full_text": "The sound insulation in this hotel is nonexistent. I could hear every word of the conversation in the room next to me, their TV, their alarm clock in the morning, even the toilet flushing. I called the front desk at midnight to ask about moving rooms and was told they were fully booked. Put in earplugs and barely slept. For a premium hotel on Pennsylvania Avenue, the construction quality is shockingly poor. The walls seem to be made of drywall and prayers.",
+        "reviewer_type": "solo",
+        "primary_complaint": "noise"
+      },
+      {
+        "date": "January 2026",
+        "rating": 2,
+        "title": "Elevator situation is a joke",
+        "full_text": "Stayed 4 nights and spent approximately 2 hours total waiting for elevators. Not exaggerating. The elevator system seems to have a mind of its own — you press your floor on the kiosk, it assigns you an elevator, and then you wait. And wait. I missed the start of a meeting on day 2 because the elevator took 25 minutes. Staff acknowledged the problem and said the system 'needs to be reprogrammed' but apparently that's been the case for years. On a 14-story hotel with 777 rooms, you need functional elevators.",
+        "reviewer_type": "business",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "December 2025",
+        "rating": 1,
+        "title": "Crab cake sandwich was an insult to DC",
+        "full_text": "The food at the hotel restaurant is mediocre at best and offensive at worst. Ordered the crab cake sandwich — the 'crab cake' was clearly mostly filler, served on a stale bun with wilted lettuce. $26 for that. The breakfast buffet was $45 and consisted of rubbery eggs, cold bacon, and fruit that had been sitting out since dawn. For a hotel on Pennsylvania Avenue in the nation's capital, the F&B operation is embarrassingly bad. Walk two blocks in any direction for better food at half the price.",
+        "reviewer_type": "couple",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "November 2025",
+        "rating": 2,
+        "title": "Valet parking is highway robbery",
+        "full_text": "Valet-only parking at $69 per night. No self-park option. That's $207 for a 3-night stay just to park your car. And the valet service itself was slow — waited 20 minutes for my car every morning. One evening they couldn't find my car for 30 minutes and I almost missed a dinner reservation. When you factor in parking, the destination fee, and the overpriced restaurant, a $350/night room becomes a $500/night stay. There are better options in DC for that money.",
+        "reviewer_type": "family",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "October 2025",
+        "rating": 1,
+        "title": "Room was disgustingly hot and humid",
+        "full_text": "Room thermostat was set to 68 but the room felt like 80+. Called engineering twice — they came both times, fiddled with the unit, said it was 'working fine' and left. It was not fine. The room was so humid that the mirrors were foggy and my clothes felt damp. Opened the window but Pennsylvania Avenue traffic noise made sleep impossible. Third call to engineering at 1am — no answer. Spent the night sweating and furious. The AC system in this hotel is clearly failing across multiple rooms based on other reviews I've read.",
+        "reviewer_type": "business",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "September 2025",
+        "rating": 2,
+        "title": "Titanium Elite and still can't get an upgrade",
+        "full_text": "I'm a Marriott Titanium Elite member with over 100 nights annually. Checked in expecting at least a modest upgrade — got the exact base room I booked. Asked nicely and was told 'we don't do upgrades for Titanium members, only Ambassadors.' That's factually wrong — Marriott's own policy guarantees suite upgrades based on availability. The front desk agent clearly didn't know the loyalty program rules. No welcome amenity, no late checkout offered, nothing. Why do I maintain elite status if properties ignore the benefits?",
+        "reviewer_type": "business",
+        "primary_complaint": "staff"
+      },
+      {
+        "date": "August 2025",
+        "rating": 1,
+        "title": "Worst room service experience ever",
+        "full_text": "Ordered room service at 8pm. Food arrived at 9:45pm — cold. The burger was inedible, the fries were soggy, and the salad looked like it had been made hours ago. Called to complain and was told a manager would call back. No one ever called. Found the $68 charge (plus $15 delivery fee plus 20% gratuity) on my bill at checkout. Disputed it and the checkout clerk said she couldn't remove it without a manager. Manager wasn't available. Had to call corporate. The entire F&B operation at this hotel needs to be rebuilt from scratch.",
+        "reviewer_type": "solo",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "July 2025",
+        "rating": 2,
+        "title": "Good bones but falling apart",
+        "full_text": "You can tell this was once a grand hotel. The lobby still has that JW Marriott elegance with the atrium and fountain. But once you get to the rooms, it's clear the property has been neglected for years. Carpet fraying at the edges, grout in the bathroom turning brown, desk lamp flickering, AC unit rattling. The bones are there for a great hotel but it desperately needs a $100M+ renovation. Pennsylvania Avenue location is unbeatable but the product doesn't match the address.",
+        "reviewer_type": "couple",
+        "primary_complaint": "room_quality"
+      },
+      {
+        "date": "June 2025",
+        "rating": 1,
+        "title": "Fire alarm at 3am — no staff response",
+        "full_text": "Fire alarm went off at 3am. Evacuated to the lobby in pajamas with hundreds of other guests. Staff seemed as confused as we were — no one directed us where to go, no announcements, no bottled water, nothing. Stood outside for 45 minutes in 40-degree weather before being told it was a false alarm from a 'malfunctioning sensor.' No apology from management, no email follow-up, no compensation for a completely disrupted night. The lack of emergency preparedness at a 777-room hotel is genuinely concerning from a safety standpoint.",
+        "reviewer_type": "family",
+        "primary_complaint": "staff"
+      },
+      {
+        "date": "May 2025",
+        "rating": 2,
+        "title": "Location is the only redeeming quality",
+        "full_text": "Steps from the White House, National Mall, and Metro Center station — the location is perfect. But location alone doesn't justify $400+ per night for a dated room with thin walls, slow elevators, and mediocre service. The staff are polite but clearly stretched thin. Housekeeping missed our room on day 2. The gym was adequate but small for a hotel this size. If they'd invest in a proper renovation, this could be one of DC's best hotels. Right now, it's coasting on its address.",
+        "reviewer_type": "business",
+        "primary_complaint": "room_quality"
+      }
+    ]
+  }
+}

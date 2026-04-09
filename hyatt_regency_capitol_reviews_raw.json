@@ -1,0 +1,146 @@
+{
+  "scrape_metadata": {
+    "scrape_date": "2026-04-09",
+    "platform": "TripAdvisor",
+    "secondary_platform": "Yelp",
+    "focus": "negative_reviews_1_2_star",
+    "method": "firecrawl_scrape_cli_v1.12.2",
+    "batches_completed": ["tripadvisor_main", "tripadvisor_pagination", "yelp_page1"]
+  },
+  "property": {
+    "asset_code": "HYA-CAP",
+    "property_name": "Hyatt Regency Washington on Capitol Hill",
+    "keys": 840,
+    "address": "400 New Jersey Ave NW, Washington, DC 20001",
+    "market": "Washington DC",
+    "asset_status": "comp",
+    "platform": "TripAdvisor",
+    "source_url": "https://www.tripadvisor.com/Hotel_Review-g28970-d84078-Reviews-Hyatt_Regency_Washington_on_Capitol_Hill-Washington_DC_District_of_Columbia.html",
+    "overall_rating": 3.9,
+    "rating_scale": "/5",
+    "review_count": 4892,
+    "review_distribution": {
+      "excellent_5star": 1810,
+      "good_4star": 1250,
+      "average_3star": 880,
+      "poor_2star": 560,
+      "terrible_1star": 392
+    },
+    "rating_breakdown": {
+      "cleanliness": 3.9,
+      "location": 4.5,
+      "value_for_money": 3.4,
+      "staff_service": 3.7,
+      "room_quality": 3.6,
+      "comfort": 3.8
+    },
+    "complaint_analysis": {
+      "dominant_complaints": ["value", "staff_service", "room_quality"],
+      "staff_complaints": 7,
+      "noise_complaints": 4,
+      "room_quality_complaints": 6,
+      "value_complaints": 9,
+      "cleanliness_complaints": 5,
+      "maintenance_complaints": 5,
+      "flag": "VALUE — extremely expensive parking, hidden resort/destination fees, $5.99 OJ from concentrate; large convention hotel feel with impersonal service; STAFF — chronically understaffed front desk with long check-in queues; ROOMS — pre-renovation rooms were small and dated; ongoing renovation causing construction noise complaints; CLEANLINESS — dust reported in rooms and common areas"
+    },
+    "negative_reviews": [
+      {
+        "date": "March 2026",
+        "rating": 1,
+        "title": "Convention hotel chaos — avoid at all costs",
+        "full_text": "This is a massive convention hotel that treats individual guests like an afterthought. Checked in after a long flight to find a 45-minute line at the front desk with only two clerks working. Room was on a floor under renovation — construction noise started at 7am. When I called to complain, phone rang 15 times before anyone answered. The $69/night valet parking is highway robbery and there's no self-park option. The mandatory destination fee adds another $30/day for 'amenities' I never used. For $400/night you'd expect at least basic competence.",
+        "reviewer_type": "business",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "February 2026",
+        "rating": 1,
+        "title": "Dust everywhere, staff nowhere",
+        "full_text": "Arrived to a room that clearly hadn't been properly cleaned. Dust on the desk, nightstands, and windowsills. The bathroom mirror had water spots and there were hairs in the bathtub. Called housekeeping three times over two hours — no one ever came. Finally went to the front desk where the single clerk was overwhelmed with a line of 10 people. The 'newly renovated' lobby is nice but the rooms tell a different story. For a Hyatt Regency, this is embarrassing.",
+        "reviewer_type": "solo",
+        "primary_complaint": "cleanliness"
+      },
+      {
+        "date": "January 2026",
+        "rating": 2,
+        "title": "Nice renovation but the service hasn't caught up",
+        "full_text": "The lobby renovation looks great and the room was updated, but the service is stuck in the past. Waited 30 minutes to check in. The restaurant charged $22 for a basic burger and $6 for a glass of orange juice from concentrate. Pool was overcrowded with a school group and no staff monitoring it. The bellman was helpful but seemed to be the only person on duty who cared. Location near the Capitol is the only reason this gets two stars instead of one.",
+        "reviewer_type": "family",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "December 2025",
+        "rating": 1,
+        "title": "Construction nightmare — plywood in hallways",
+        "full_text": "Booked this hotel for a work conference not knowing they were in the middle of a massive renovation. Plywood barriers throughout the hallways, constant drilling and hammering from 7am to 6pm, and the elevators were painfully slow with half of them out of service. My room on the 8th floor was supposedly 'finished' but had paint drips on the carpet and the bathroom door didn't close properly. At $550/night during our conference, I expected a finished product, not a construction zone. The front desk offered zero compensation.",
+        "reviewer_type": "business",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "November 2025",
+        "rating": 2,
+        "title": "Overpriced for what you get",
+        "full_text": "For a 'Regency' branded property, this hotel significantly underdelivers. The room was small — barely fit a king bed and desk with no room to walk around. No mini fridge, no coffee maker that works properly, no bathrobe. Parking is valet only at $69/night which is outrageous. The destination fee of $30/day supposedly covers WiFi and fitness center — things that should be free at any hotel in 2025. Total cost for one night was over $600 when you add everything up. The Holiday Inn down the street is honestly a better value.",
+        "reviewer_type": "couple",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "October 2025",
+        "rating": 1,
+        "title": "Rude front desk, lost my reservation",
+        "full_text": "Arrived at 4pm with a confirmed reservation and was told they had no record of my booking despite having a confirmation email. The front desk agent was dismissive and suggested I 'call Hyatt corporate.' After 45 minutes on the phone with Hyatt, they confirmed my reservation and the hotel finally admitted their error. No apology, no upgrade, nothing. The agent actually rolled her eyes when I asked to speak to a manager. The manager came out, said 'sorry about that' and walked away. World of Hyatt Globalist member for 8 years and this is how they treat loyalty.",
+        "reviewer_type": "business",
+        "primary_complaint": "staff"
+      },
+      {
+        "date": "September 2025",
+        "rating": 1,
+        "title": "Food poisoning from hotel restaurant",
+        "full_text": "My wife and I both got violently ill after eating dinner at the hotel restaurant. We ordered the salmon and the chicken — both came lukewarm and tasted off. By 2am we were both sick. I reported it to the front desk the next morning and they said they'd 'pass it along to the kitchen manager.' No follow-up, no comp, nothing. We had to cancel our plans for the next day. When I called back to follow up a week later, no one had any record of my complaint. Absolutely unacceptable food safety standards.",
+        "reviewer_type": "couple",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "August 2025",
+        "rating": 2,
+        "title": "Massive hotel with zero personality",
+        "full_text": "If you want to feel like a number, stay here. 840 rooms means you're just another body in the lobby. The check-in line was 20 deep when we arrived at 3pm on a Friday. Room was clean but sterile — felt like a hospital with better sheets. The pool is the only redeeming quality but it was packed with kids from some sports tournament. Noise from the hallway was constant — doors slamming all night from conference attendees. Location is great for the Hill but that's the only positive.",
+        "reviewer_type": "family",
+        "primary_complaint": "noise"
+      },
+      {
+        "date": "July 2025",
+        "rating": 1,
+        "title": "Elevator wait times are absurd",
+        "full_text": "I'm a business traveler who stays 150+ nights a year in hotels. The elevator situation at this property is the worst I've ever encountered. Waited 15-20 minutes for an elevator every single time during my 3-night stay. When you're on the 12th floor and running late for meetings, this is a dealbreaker. Half the elevators were out of service for renovation. The stairwell doors lock behind you so if you try to walk down, you can get trapped. Mentioned it to the front desk and they shrugged and said 'we're renovating.' For what they charge, this is unacceptable.",
+        "reviewer_type": "business",
+        "primary_complaint": "maintenance"
+      },
+      {
+        "date": "June 2025",
+        "rating": 2,
+        "title": "Pool area nice, everything else mediocre",
+        "full_text": "The indoor pool and fitness center are genuinely good — probably the best hotel pool in the Capitol Hill area. But beyond that, this is a thoroughly average convention hotel charging premium prices. Room was dated despite the 'renovation' — carpet had stains, the AC unit was loud, and the bathroom grout was discolored. Staff seemed overwhelmed and uninterested. Breakfast at the restaurant was $35 per person for a mediocre buffet. I'd stay at the Holiday Inn Capitol Hill for half the price and get the same experience minus the pool.",
+        "reviewer_type": "solo",
+        "primary_complaint": "value"
+      },
+      {
+        "date": "April 2025",
+        "rating": 1,
+        "title": "Charged for minibar items I never touched",
+        "full_text": "Checked out and found $47 in minibar charges on my bill for items I never consumed. The sensors in the minibar apparently register a charge if you even move an item to make room for your own drinks. I disputed it at checkout and the clerk said she 'couldn't remove charges without a manager' and no manager was available at 6am. Had to call corporate after checkout to get a refund, which took 3 weeks and multiple phone calls. This is a predatory billing practice and Hyatt should be ashamed.",
+        "reviewer_type": "business",
+        "primary_complaint": "fees"
+      },
+      {
+        "date": "March 2025",
+        "rating": 2,
+        "title": "Location saves it from one star",
+        "full_text": "Walking distance to the Capitol, Union Station, and the Mall — that's genuinely great. Everything else about this hotel is mediocre at best. The room was tiny for the price, housekeeping missed our room entirely on day two, and the front desk was staffed by people who seemed to actively dislike their jobs. The lobby bar is overpriced and the food is forgettable. If you're here for a conference and your organization is paying, fine. If you're spending your own money, look elsewhere.",
+        "reviewer_type": "business",
+        "primary_complaint": "staff"
+      }
+    ]
+  }
+}
